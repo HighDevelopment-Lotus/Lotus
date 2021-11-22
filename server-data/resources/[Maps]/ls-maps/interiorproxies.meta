@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+	<startFrom value="2000"/>
+	<proxies>
+		<!-- Hospital -->
+		<Item>gabz_pillbox_dlc_milo_</Item>
+		<Item>gabz_pillbox_ext</Item>
+		<Item>gabz_pillbox_milo_</Item>
+		<Item>hei_dt1_06_long_0</Item>
+		<Item>hei_dt1_06_strm_0</Item>
+		<Item>hei_dt1_occl_07</Item>
+		<Item>hei_dt1_rd1_long_1</Item>
+		<Item>hei_dt1_rd1_strm_4</Item>
+		<Item>hei_fwy_04_strm_0</Item>
+		<!-- CityHall -->
+		<Item>bh1_occl_05</Item>
+		<Item>np_town_hall_milo_</Item>
+		<Item>town_hall_details</Item>
+		<Item>int_gover_qt_miracle_sec</Item>
+		<!-- Prison -->
+		<Item>prison_visit_milo_</Item>
+		<Item>prison_cells_doors</Item>
+		<Item>prison_garage_details</Item>
+		<Item>prison_cafeteria_milo_</Item>
+		<Item>prison_cells_milo_</Item>
+		<Item>cs6_occl_02</Item>
+		<Item>lr_cs6_04</Item>
+		<Item>lr_cs6_04_strm_4</Item>
+		<Item>lr_cs6_04_strm_3</Item>
+		<!-- Stores -->
+		<Item>cs1_occl_10</Item>
+		<Item>gabz_hei_hw1_02_interior_v_shop_247_milo_</Item>
+		<Item>gabz_hei_sm_10_interior_v_gen_liquor_milo_</Item>
+		<!-- MRPD -->
+		<Item>gabz_mrpd_milo_</Item>
+		<Item>apa_distlodlights_medium019</Item>
+		<Item>apa_distlodlights_small029</Item>
+		<Item>apa_lodlights_medium019</Item>
+		<Item>apa_lodlights_small029</Item>
+		<Item>gabz_mrpd_ext</Item>
+		<Item>hei_ch3_04_strm_0</Item>
+		<Item>hei_dt1_19</Item>
+		<Item>hei_dt1_19_critical_0</Item>
+		<Item>hei_dt1_19_interior_0_heist_police_dlc_milo_</Item>
+		<Item>hei_dt1_19_strm_0</Item>
+		<Item>hei_dt1_occl_05</Item>
+		<Item>hei_dt1_rd1_critical_1</Item>
+		<Item>hei_dt1_rd1_strm_5</Item>
+		<Item>hei_dt1_rd1_strm_6</Item>
+		<Item>hei_dt1_rd1_strm_7</Item>
+		<Item>hei_id2_occl_00</Item>
+		<Item>vw_distlodlights_medium019</Item>
+		<Item>vw_distlodlights_small029</Item>
+		<Item>vw_lodlights_medium019</Item>
+		<Item>vw_lodlights_small029</Item>
+		<!-- Sushi -->
+		<Item>school_interior_upper</Item>
+		<Item>school_exterior_01</Item>
+		<Item>ch2_07d_grass_0</Item>
+		<Item>apa_ss1_occl_03</Item>
+		<Item>apa_ss1_rd1_critical_1</Item>
+		<Item>apa_ss1_13_strm_0</Item>
+		<!-- Car Dealer -->
+		<Item>hei_bh1_13_strm_0</Item>
+		<Item>int_luxury_milo_</Item>
+		<!-- Rehab -->
+		<Item>ult-rehab_milo_</Item>
+		<Item>apa_ch2_10_long_0</Item>
+		<Item>apa_ch2_occl_00</Item>
+		<Item>apa_ch2_occl_02</Item>
+		<Item>hei_ch2_10_long_0</Item>
+		<!-- Bobcat -->
+		<Item>prologue06_int_np</Item>
+		<Item>prologue_details</Item>
+		<!-- Hunting -->
+		<Item>hei_cs1_16_strm_0</Item>
+		<Item>int_genstore_milo_</Item>
+		<!-- Digital Den -->
+		<Item>hei_id2_occl_03</Item>
+		<Item>kt1_occl_03</Item>
+		<Item>lr_cs4_14_interior_v_hicksbar_np_milo_</Item>
+		<Item>xee_digital_den</Item>
+		<Item>xee_digital_den_ls</Item>
+		<!-- Yoga -->
+		<Item>story_props</Item>
+		<Item>v_int_m_yoga_milo_</Item>
+		<Item>yoga_beach</Item>
+		<Item>gta5interiors_krnt</Item>
+		<Item>hei_dt1_occl_05</Item>
+		<Item>cs1_far_occl_01</Item>
+		<Item>lr_cs4_14_strm_1</Item>
+		<Item>lr_cs4_14_interior_v_hicksbar_milo_</Item>
+		<Item>fairzz_can_suck_it</Item>
+		<Item>lr_sc1_04_strm_0</Item>
+		<Item>vu_fight_club_milo_</Item>
+		<!-- Bomen -->
+		<Item>Forests</Item>
+		<Item>Forests_lod</Item>
+		<Item>Forests01</Item>
+		<Item>Forests01_lod</Item>
+		<Item>Forests2</Item>
+		<Item>Forests2_lod</Item>
+		<Item>Forests3</Item>
+		<Item>Forests3_lod</Item>
+		<Item>Forests4</Item>
+		<Item>Forests4_lod</Item>
+		<Item>Forests5</Item>
+		<Item>Forests5_lod</Item>
+		<Item>Forests6</Item>
+		<Item>Forests6_lod</Item>
+		<Item>Forests7</Item>
+		<Item>Forests7_lod</Item>
+		<Item>Forests8</Item>
+		<Item>Forests8_lod</Item>
+		<Item>map_06_closed_l4_X</Item>
+		<Item>map_07_closed_l_X</Item>
+		<Item>map_09_closed_l_X</Item>
+		<Item>map_10_closed_l2_X</Item>
+		<Item>map_11_closed_l_X</Item>
+		<Item>map_13_closed_LN_X2</Item>
+		<Item>map_14_closed_LN_X</Item>
+		<Item>map_15_closed_l_X</Item>
+		<Item>map_16_closed_l_X</Item>
+		<Item>map_17_closed_l_X</Item>
+		<Item>map_18_closed_l_X2</Item>
+		<Item>map_19_closed_l2_X</Item>
+		<Item>map_20_closed_l_X</Item>
+		<Item>map_21_closed_l_X</Item>
+		<Item>map_22_closed_l11_X2</Item>
+		<Item>map_23_closed_LN_X</Item>
+		<Item>map_25_closed_LN_X</Item>
+		<Item>map_26_closed_l_X</Item>
+		<Item>map_27_closed_l_X</Item>
+		<Item>map_28_closed_l_X</Item>
+		<Item>map_29_closed_l2_X</Item>
+		<Item>map_30_closed_l2_X</Item>
+		<Item>map_airport_l_X</Item>
+		<Item>map_details_frank_l2_X</Item>
+		<Item>map_downtown_01_X</Item>
+		<Item>map_downtown_02_X</Item>
+		<Item>map_downtown_03_X</Item>
+		<Item>map_downtown_l2_X</Item>
+		<Item>map_finaltouch_01_l_X</Item>
+		<Item>map_finaltouch_03_l_X</Item>
+		<Item>map_finitions_3_LN_X</Item>
+		<Item>map_p_eastls_02_X</Item>
+		<Item>map_p_eastls_03_X</Item>
+		<Item>map_p_eastls_05_X</Item>
+		<Item>map_perfect01_l_Win_X</Item>
+		<Item>map_pine_02_l5_X</Item>
+		<Item>map_pine_03_l4_X2</Item>
+		<Item>map_pine_04_LN2_X</Item>
+		<Item>map_pine_05_l5_X</Item>
+		<Item>map_pine_8_l_X</Item>
+		<Item>map_pine_10_l3_X</Item>
+		<Item>map_pine_11_l3_X</Item>
+		<Item>map_pine_12_l_X</Item>
+		<Item>map_pine_13_l_X2</Item>
+		<Item>map_pine_14_l_X</Item>
+		<Item>map_pine_15_l_X</Item>
+		<Item>map_pine_19_l_X</Item>
+		<Item>map_pine_24_l_X</Item>
+		<Item>map_pine_26_l_X</Item>
+		<Item>map_south_part1_l_X</Item>
+		<Item>map_south_part2_l_X</Item>
+		<Item>map_story_rockford_Win20_X</Item>
+		<Item>map_zancudo_03</Item>
+		<Item>map_zancudo_04</Item>
+		<Item>map_zancudo_finitions_l</Item>
+		<Item>Shores</Item>
+		<Item>Shores_lod</Item>
+		<Item>Shores2</Item>
+		<Item>Shores2_lod</Item>
+		<Item>Shores3</Item>
+		<Item>Shores3_lod</Item>
+		<Item>Shores4</Item>
+		<Item>Shores4_lod</Item>
+		<Item>Shores5</Item>
+		<Item>Shores5_lod</Item>
+		<Item>Shores6</Item>
+		<Item>Shores6_lod</Item>
+		<Item>SouthernStyledVegetation</Item>
+		<Item>SouthernStyledVegetation_02</Item>
+		<Item>SouthernStyledVegetation_03</Item>
+		<Item>SouthernStyledVegetation_04</Item>
+		<Item>SouthernStyledVegetation_05</Item>
+		<Item>SouthernStyledVegetation_06</Item>
+		<Item>SouthernStyledVegetation_07</Item>
+		<Item>SouthernStyledVegetation_08</Item>
+		<!-- Burgershot -->
+		<Item>bs_distantlights</Item>
+		<Item>bs_extprops</Item>
+		<Item>bs_int</Item>
+		<Item>bs_int_lod1</Item>
+		<Item>bs_lodlights</Item>
+		<Item>bs_streetlights</Item>
+		<Item>hei_sm_19</Item>
+		<Item>hei_vb_03</Item>
+		<Item>hei_vb_03_strm_0</Item>
+		<Item>hei_vb_rd_strm_0</Item>
+		<Item>vb_03_strm_0</Item>
+		<Item>vb_occl_01</Item>
+		<Item>vw_distlodlights_small024</Item>
+		<Item>vw_lodlights_small024</Item>
+		<!-- Mojito -->
+		<!-- Hayes -->
+		<Item>denis3d_hayes_auto_exterior</Item>
+		<Item>denis3d_hayes_auto_milo_</Item>
+		<Item>hei_sm_occl_03</Item>
+		<Item>hei_sm_rd_strm_1</Item>
+		<!-- Paleto Vespucci -->
+		<Item>hei_dt1_19_interior_0_heist_police_dlc_np_milo_</Item>
+		<Item>hei_vb_04_strm_0</Item>
+		<Item>pd_carpark</Item>
+		<Item>vb_occl_01</Item>
+		<Item>vbpd_details</Item>
+		<!-- Paleto Police -->
+		<Item>cs1_16_interior_v_sheriff2_milo_</Item>
+    	<Item>cs1_16_sheriff_cap</Item>
+    	<Item>cs1_occl_07</Item>
+    	<Item>cs1_occl_09</Item>
+    	<Item>hei_cs1_16_interior_v_sheriff2_milo_</Item>
+    	<Item>slb2k11_paleto_pd_milo_</Item>
+    	<Item>bh1_13_strm_0</Item>
+    	<Item>bh1_occl_04</Item>
+    	<Item>hei_bh1_13_strm_0</Item>
+    	<Item>rkf_showroom</Item>
+		<!-- Impound Bennys -->
+    	<Item>denis3d_impound</Item>
+    	<Item>denis3d_impound_strm_0</Item>
+    	<Item>downtown_01_metadata_010_strm</Item>
+    	<Item>gabz_bennys</Item>
+    	<Item>gabz_bennys_strm_0</Item>
+    	<Item>gabz_lr_sc1_02_interior_0_supermod_int_milo_</Item>
+    	<Item>gabz_nphub_distantlights</Item>
+    	<Item>gabz_nphub_lodlights</Item>
+    	<Item>hei_dt1_20_long_0</Item>
+    	<Item>hei_dt1_20_strm_1</Item>
+    	<Item>hei_dt1_22_long_0</Item>
+    	<Item>hei_dt1_22_strm_0</Item>
+    	<Item>hei_dt1_rd1</Item>
+    	<Item>hei_dt1_rd1_critical_0</Item>
+    	<Item>hei_dt1_rd1_strm_0</Item>
+    	<Item>hei_dt1_rd1_strm_1</Item>
+    	<Item>lr_sc1_00e_long_0</Item>
+    	<Item>lr_sc1_00e_strm_0</Item>
+    	<Item>lr_sc1_occl_02</Item>
+    	<Item>lr_sc1_rd</Item>
+    	<Item>lr_sc1_rd_strm_1</Item>
+    	<Item>np_apartments_room</Item>
+    	<Item>vw_distlodlights_medium012</Item>
+    	<Item>vw_distlodlights_small035</Item>
+    	<Item>vw_lodlights_medium012</Item>
+    	<Item>vw_lodlights_small035</Item>
+		<!-- Grote Bank -->
+    	<Item>hei_hw1_02_interior_2_heist_ornate_bank_milo_</Item>
+    	<Item>np_int_placement_ch_interior_6_dlc_casino_vault_milo_</Item>
+
+		<!-- Bobcat -->
+		<Item>prologue06_int_np</Item>
+		<Item>prologue_details</Item>
+		</proxies>
+</SInteriorOrderData>
