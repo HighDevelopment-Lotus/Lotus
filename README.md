@@ -11,3 +11,8 @@
 
 ## Common Issue
  1. **My city is not loading.. It looks empty?** Please extend your texture budget in your graphic settings.
+ 2. **I cannot create a character?** There is a JS function that refuses to accept names that are:
+- Weird like that: "dhuhqweuhduhqwe"
+- That are not using capital letters "mike"
+- That are way too long
+- An incorrect birthdate (Like a month that doesnt exist for example: 01-13-2021)
