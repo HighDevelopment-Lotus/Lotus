@@ -1,0 +1,125 @@
+body {
+ user-select: none;
+ overflow: hidden;
+ font-family: 'Lato', sans-serif;
+}
+
+.main-control-panel-container {
+ position: absolute;
+ bottom: -15vh;
+ left: 70vh;
+}
+
+.control-panel-container {
+ width: 40vh;
+ height: 13vh;
+ border-radius: .3vh;
+ background-color: #658691;
+ border: .3vh solid black;
+}
+
+.control-panel-mini {
+ position: absolute;
+ top: 5vh;
+ left: 1.5vh;
+ width: 37vh;
+ height: 5.2vh;
+ background-color: #bbc0b6;
+}
+
+.control-panel-name {
+ position: absolute;
+ font-size: 0.9vh;
+ font-weight: 600;
+ color: white;
+ top: 2.5vh;
+ left: 1.6vh;
+}
+
+.control-panel-maker {
+ position: absolute;
+ font-size: 0.9vh;
+ font-weight: 600;
+ color: white;
+ bottom: 1vh;
+ right: 3vh;
+}
+
+.control-panel-name > img {
+ position: absolute;
+ top: -1vh;
+ height: 3vh;
+ width: 3vh;
+}
+
+.control-panel-desc {
+ position: absolute;
+ font-size: 0.9vh;
+ font-weight: 600;
+ color: white;
+ top: 11.5vh;
+ left: 1.6vh;
+}
+
+.control-panel-ball {
+ position: absolute;
+ bottom: .5vh;
+ right: .5vh;
+ width: 1.8vh;
+ height: 1.8vh;
+ border-radius: 50%;
+ background-color: rgb(46, 46, 46);
+}
+
+/* Buttons */
+
+.button {
+ position: relative;
+ float: left;
+ margin-right: 1vh;
+ width: 5vh;
+ height: 5vh;
+ top: .6vh;
+ left: 1.5vh;
+}
+
+.button > img {
+ width: 4vh;
+ height: 4vh;
+}
+
+.button:hover {
+ opacity: 0.8;
+}
+
+.tooltiptext {
+ visibility: hidden;
+ width: 120px;
+ background-color: rgb(31, 31, 31);
+ color: #fff;
+ text-align: center;
+ padding: 5px 0;
+ border-radius: 6px;
+ position: absolute;
+ z-index: 1;
+ bottom: 125%;
+ left: 50%;
+ margin-left: -65px;
+ opacity: 0;
+}
+  
+.tooltiptext::after {
+ content: "";
+ position: absolute;
+ top: 100%;
+ left: 50%;
+ margin-left: -5px;
+ border-width: 5px;
+ border-style: solid;
+ border-color: rgb(31, 31, 31) transparent transparent transparent;
+}
+  
+.button:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,41 @@
+.main-info-container {
+    position: absolute;
+    display: none;
+    bottom: .3vh;
+    left: 76vh;
+}
+
+.info-container {
+    width: 25vh;
+    height: fit-content;
+    border-radius: .2vh;
+    background-color: #222831; 
+    border: 2px solid rgb(29, 29, 29);
+    box-shadow: 1px 1px 12px #000000;
+}
+
+.info-title {
+    position: relative;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5vh;
+    text-align: center;
+    line-height: 4vh;
+}
+
+.info-desc-container {
+    position: relative;
+    width: 100%;
+}
+
+.info-desc {
+    position: relative;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2vh;
+    text-align: center;
+    margin-left: 5vh;
+    margin-bottom: 1vh;
+    width: 15vh;
+}

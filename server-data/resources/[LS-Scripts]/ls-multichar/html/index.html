@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+    <body>
+        <div class="multichar-main-container">
+            <div class="multichar-container">
+                <div class="multichar-photo"><img src=""></div>
+                <div class="multichar-name"><span class="small-font"></span></div>
+                <div class="multichar-remove-info">
+                    <div class="multichar-date"><br><span class="small-font"></span></div>
+                    <div class="multichar-work"><br><span class="small-font"></span></div>
+                    <div class="multichar-bsn"><br><span class="small-font"></span></div>
+                </div>
+                <div class="multichar-new-name">
+                    <input class="input name" type="text" placeholder="Voornaam.." required spellcheck="false">
+                    <input class="input lastname" type="text" placeholder="Achternaam.." required spellcheck="false">
+                    <input class="input date" type="date" placeholder="Geboortedatum" min="1900-01-01" max="2000-12-31">
+                    <select class="input gender" name="gender">
+                        <option value="man" selected>Man</option>
+                        <option value="vrouw">Vrouw</option>
+                    </select>
+                </div>
+                <div class="multichar-arrow-left"><i class="fas fa-arrow-left"></i></div>
+                <div class="multichar-arrow-right"><i class="fas fa-arrow-right"></i></div>
+                <div class="multichar-play-button">Spelen</div>
+                <div class="multichar-delete-button">Verwijderen</div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/script.js"></script>
+</html>

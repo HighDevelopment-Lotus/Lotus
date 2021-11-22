@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hud.css">
+    <link rel="stylesheet" href="./css/context.css">
+    <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/eye.css">
+    <link rel="stylesheet" href="./css/interaction.css">
+    <link rel="stylesheet" href="./css/scope.css">
+    <link rel="stylesheet" href="./css/blocks.css">
+    <link rel="stylesheet" href="./css/pass.css">
+    <link rel="stylesheet" href="./css/skilltask.css">
+    <link rel="stylesheet" href="./css/magazine.css">
+    <link rel="stylesheet" href="./css/info.css">
+    <link rel="stylesheet" href="./css/notify.css">
+    <link rel="stylesheet" href="./css/newspaper.css">
+</head>
+    <body>
+        <div class="main-eye-container">
+            <div class="eye-interact"><img src="./img/eye.png" class="eye"/></div>
+            <div class="menu-items-container"></div>
+        </div>
+        <div class="main-interaction-container">
+            <div class="interaction-container">[E] Deuren</div>
+        </div>
+        <div class="main-context-container">
+            <div class="context-image"><img src=""></div>
+            <div class="inside-context">
+                <div class="context-menu-item title">Garage</div>
+                <div class="context-menu-item return">< Terug</div>
+                <div class="context-menu-items">
+                    <!-- Auto Generated -->
+                </div>
+                <div class="context-menu-item close">Sluiten</div>
+            </div>
+        </div>
+        <div class="main-input-container">
+            <div class="input-container">
+                <div class="input-title"></div>
+                <div class="input-logo"></div>
+                <input class="input-input" id="remove-text" type="text" placeholder="Type iets.." required spellcheck="false">
+                <input class="input-input" id="remove-number" type="number" placeholder="Type iets.." required spellcheck="false">
+                <div class="input-underline"></div>
+                <div class="input-button-accept">Bevestigen</div>
+                <div class="input-button-cancel">Annuleren</div>
+            </div>
+        </div>
+        <div class="main-sniper-scope FadeIn">
+            <img class="scope-hunting" src="img/scope.png">
+        </div>
+        <div class="main-police-tablet">
+            <div class="tablet-bg"></div>
+            <iframe src="https://meos.watzevakman.nl/" name="tablet" frameborder="0" class="tablet-iframe"></iframe>
+            <img src="./img/tablet-frame.png" class="tablet-frame"/>
+        </div>
+        <div class="main-police-scanner">
+            <div class="scanner-text">Vinger Code:<div class="scanner-id"></div></div>
+            <div class="scanner-button"></div>
+            <img src="./img/fingerprint.png" class="scanner-frame"/>
+        </div>
+        <div class="main-magazine-container">
+            <iframe src="https://player.flipsnack.com/?hash=QUM3Q0RBODhCN0EraG15dHl5ZmNqbA==" name="tablet" frameborder="0" class="magazine-iframe"></iframe>
+            <div class="close-button"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="main-newspaper-container">
+            <div class="newspaper-container">
+                <div class="newspaper-article-one">
+                    <div class="article-title">Stripclub Los Santos</div>
+                    <div class="article-text">Gisteren heeft de stripclub van los santos haar deuren geopend voor iedereen. Het was een leuke ervaring hebben we van meerdere vernomen. De afterparty was iets minder daarbij is helaas politie van toepassing moeten komen i.v.m. vuurgeweld zegt de heer Bruinsma.</div>
+                </div>
+
+                <div class="newspaper-article-two">
+                    <div class="article-title">Economie Los Santos</div>
+                    <div class="article-text">De burgemeester heeft aangegeven dat binnenkort de belasting omhoog gaat van alle consumptie producten en fossiele brandstoffen dit aangezien corona los santos heel hard heeft geraakt i.v.m. import en export van de stad.</div>
+                </div>
+                <div class="newspaper-arrest-title font-newspaper">Recente Aanhoudingen:</div>
+                <div class="recent-arrests">
+                    <!-- Auto Generated -->
+                </div>
+            </div>
+            <img src="./img/newspaper.png" class="newspaper-frame"/>
+        </div>
+        <div class="main-pass-container">
+            <div class="police-pass-name"></div>
+            <img src="" class="police-image">
+            <img src="./img/police-pas.png" class="police-pass">
+        </div>
+        <div class="main-task-container">
+            <canvas id="skill-canvas" width="300" height="300"></canvas>
+        </div>
+        <div class="main-blocks-container">
+            <div class="grid">
+                <div class="block block-1"></div><div class="block block-2"></div><div class="block block-3"></div><div class="block block-4"></div><div class="block block-5"></div><div class="block block-6"></div><div class="block block-7"></div><div class="block block-8"></div><div class="block block-9"></div><div class="block block-10"></div><div class="block block-11"></div><div class="block block-12"></div><div class="block block-13"></div><div class="block block-14"></div><div class="block block-15"></div><div class="block block-16"></div><div class="block block-17"></div><div class="block block-18"></div><div class="block block-19"></div>
+                <div class="block block-20"></div><div class="block block-21"></div><div class="block block-22"></div><div class="block block-23"></div><div class="block block-24"></div><div class="block block-25"></div><div class="block block-26"></div><div class="block block-27"></div><div class="block block-28"></div><div class="block block-29"></div><div class="block block-30"></div><div class="block block-31"></div><div class="block block-32"></div><div class="block block-33"></div><div class="block block-34"></div><div class="block block-35"></div><div class="block block-36"></div>
+            </div>
+        </div> 
+        <div class='main-money-container'>
+            <div class="current-money plus">€ <span class="reset-color">500</span></div>
+            <div class="money-container">
+                <!-- Generated -->
+            </div>
+        </div>
+        <div class="main-notify-container">
+            <!-- Generated -->
+        </div>
+        <div class="main-info-container">
+            <div class="info-container">
+                <div class="info-title"></div>
+                <div class="info-desc-container">
+                </div>
+            </div>
+        </div>
+        <div class="main-hud-container">
+            <div class="hud-status">
+                <div class="hud-circle hud-voice"><i class="fas fa-microphone"></i></div>
+                <div class="hud-circle hud-health"><i class="fas fa-heart"></i></div>
+                <div class="hud-circle hud-armor"><i class="fas fa-shield-alt"></i></div>
+                <div class="hud-circle hud-hunger"><i class="fas fa-hamburger"></i></div>
+                <div class="hud-circle hud-thirst"><i class="fas fa-glass-whiskey"></i></div>
+                <div class="hud-circle hud-stress"><i class="fas fa-brain"></i></div>
+                <div class="hud-circle hud-air"><i class="fas fa-lungs"></i></div>
+                <div class="hud-circle hud-nos"><i class="fas fa-meteor"></i></div>
+                <div class="hud-circle hud-timer"><i class="fas fa-hourglass-half"></i></div>
+            </div>
+            <div class="main-car-hud">
+                <div class="map-border"></div>
+                <div class="car-speed-circle hud-speed"><div class="speed">0</div><div class="meters">KM/U</div></div>
+                <div class="car-hud-status">
+                    <div class="car-hud-circle hud-fuel"><i class="fas fa-gas-pump"></i></div>
+                    <div class="car-hud-circle hud-belt"><img src="./img/belt.png"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-reload">Ui wordt opnieuw geladen..</div>
+    </body>
+    <script type="text/javascript" src="./js/context.js"></script>
+    <script type="text/javascript" src="./js/input.js"></script>
+    <script type="text/javascript" src="./js/eye.js"></script>
+    <script type="text/javascript" src="./js/interaction.js"></script>
+    <script type="text/javascript" src="./js/pass.js"></script>
+    <script type="text/javascript" src="./js/scope.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/tablet.js"></script>
+    <script type="text/javascript" src="./js/info.js"></script>
+    <script type="text/javascript" src="./js/magazine.js"></script>
+    <script type="text/javascript" src="./js/skilltask.js"></script>
+    <script type="text/javascript" src="./js/newspaper.js"></script>
+    <script type="text/javascript" src="./js/notify.js"></script>
+    <script type="text/javascript" src="./js/blocks.js"></script>
+    <script type="text/javascript" src="./js/hud.js"></script>
+    <script type="text/javascript" src="./js/lib/progressbar.min.js"></script>
+</html>

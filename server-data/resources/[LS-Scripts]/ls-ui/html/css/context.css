@@ -1,0 +1,139 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow: hidden;
+}
+
+.main-context-container {
+    position: absolute;
+    display: none;
+    top: 20vh;
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inside-context {
+    position: absolute;
+    right: 40vh;
+    width: 17vw;
+    height: 55vh;
+}
+
+.context-menu-item {
+    position: relative;
+    width: 95%;
+    height: fit-content;
+    border-radius: .5vh;
+    background-color: #222831; 
+    border: 2px solid rgb(29, 29, 29);
+}
+
+.context-menu-title {
+    position: relative;
+    width: 95%;
+    margin-top: .3vh;
+    left: .3vw;
+    color: #f5f6fa;
+    font-size: 1.4vh;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.context-menu-desc {
+    position: relative;
+    width: 95%;
+    color: #f5f6fa;
+    left: .3vw;
+    font-size: 1vh;  
+    margin-top: .3vh;
+    margin-bottom: .3vh;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.context-menu-items {
+    height: fit-content;
+    max-height: 55vh;
+    width: 17vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.context-item {
+    margin-top: .3vh;
+    margin-bottom: .3vh; 
+}
+
+.context-sub-item {
+    top: .2vh;
+    height: 3.5vh;
+    text-indent: .4vw;
+    line-height: 3.5vh;
+    color: #f5f6fa;
+    font-size: 1.5vh;
+    margin-bottom: .4vh;
+}
+
+.context-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 101;
+}
+
+.context-image > img {
+    max-width: 30vh;
+    max-height: 23vh;
+    border: .3vh solid rgb(29, 29, 29);
+    border-radius: .2vh;
+}
+
+.close {
+    top: .2vh;
+    height: 3.5vh;
+    text-indent: .4vw;
+    line-height: 3.5vh;
+    color: #f5f6fa;
+    font-size: 1.5vh;
+}
+
+.title {
+    height: 3.5vh; 
+    text-indent: .4vw;
+    line-height: 3.5vh;
+    color: #f5f6fa;
+    font-size: 1.5vh;
+}
+
+.return {
+    display: none;
+    height: 3.5vh; 
+    text-indent: .4vw;
+    line-height: 3.5vh;
+    color: #f5f6fa;
+    font-size: 1.5vh;
+    margin-bottom: .1vh;
+}
+
+.context-menu-hover:hover, .close:hover, .return:hover {
+    background-color: #30475e;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+  
+::-webkit-scrollbar{
+    width: 0vh;
+    background-color: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}

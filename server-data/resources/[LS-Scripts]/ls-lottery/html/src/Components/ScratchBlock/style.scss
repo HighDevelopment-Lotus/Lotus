@@ -1,0 +1,75 @@
+.ScratchBlock {
+  position: absolute;
+  // display: inline-block;
+
+  // top: 300px;
+  // left: 466px;
+  // width: 681px;
+  // height: 328px;
+
+  top: 19.95vh;
+  left: 31.046vh;
+
+  width: 45.4vh;
+  height: 22vh;
+
+  font-family: 'impactreg';
+}
+
+.Scratchable {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.Canvas {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 45.4vh;
+  height: 22vh;
+}
+
+.Prices {
+  width: 100%;
+  height: 100%;
+}
+
+.Price {
+  display: inline-block;
+  position: relative;
+  width: 33%;
+  height: 100%;
+  padding: 0 10px;
+  line-height: 100%;
+  white-space: nowrap;
+
+  // font-weight: bold;
+  font-size: 3em;
+
+  color: #f7ef22;
+ //  text-shadow:
+ // -1px -1px 0 #000,
+ //  1px -1px 0 #000,
+ //  -1px 1px 0 #000,
+ //   1px 1px 0 #000;
+
+   -webkit-text-fill-color: #f7ef22; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: #000;
+
+  .PriceValue {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+  }
+}

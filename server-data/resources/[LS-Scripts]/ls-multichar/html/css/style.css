@@ -1,0 +1,203 @@
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ user-select: none;
+ overflow: hidden;
+}
+
+.multichar-container {
+ position: absolute;
+ display: none;
+ top: 25vh;
+ right: 8vh;
+ width: 38vh;
+ height: 45vh;
+ border-radius: 5px;
+ background-color: #222831;
+ border: 2px solid rgb(29, 29, 29);
+}
+
+.multichar-photo {
+ position: absolute;
+ left: 3.5vh;
+ top: 3vh;
+}
+
+.multichar-photo > img {
+ width: 7vh;
+ height: 7vh;
+ border-radius: 50%;
+ border: 1.5px solid #f5f6fa;
+}
+
+.multichar-name {
+ position: absolute;
+ top: 5.5vh;
+ left: 11.8vh;
+ width: 17vh;
+ color: #f5f6fa;
+ font-weight: 550;
+ font-size: 2vh;
+}
+
+.multichar-date {
+ position: absolute;
+ top: 13vh;
+ left: 3.5vh;
+ width: 80%;
+ text-align: center;
+ color: #f5f6fa;
+ font-weight: 550;
+ font-size: 1.8vh;
+ border-radius: 5px;
+ background-color: #30475e;
+ border: 2px solid rgb(29, 29, 29);
+}
+
+.multichar-work {
+ position: absolute;
+ top: 19vh;
+ left: 3.5vh;
+ width: 80%;
+ text-align: center;
+ color: #f5f6fa;
+ font-weight: 550;
+ font-size: 1.8vh;
+ border-radius: 5px;
+ background-color: #30475e;
+ border: 2px solid rgb(29, 29, 29);
+}
+
+.multichar-bsn {
+ position: absolute;
+ top: 25vh;
+ left: 3.5vh;
+ width: 80%;
+ text-align: center;
+ color: #f5f6fa;
+ font-weight: 550;
+ font-size: 1.5vh;
+ border-radius: 5px;
+ background-color: #30475e;
+ border: 2px solid rgb(29, 29, 29);
+}
+
+.small-font {
+ font-size: 1.4vh;
+}
+
+.multichar-arrow-left {
+ position: absolute;
+ display: none;
+ top: 20.5vh;
+ left: 1vh;
+ color: #f5f6fa;
+ font-size: 1.8vh;
+}
+
+.multichar-arrow-right {
+ position: absolute;
+ top: 20.5vh;
+ right: 1vh;
+ color: #f5f6fa;
+ font-size: 1.8vh;
+}
+
+.multichar-arrow-right > i:hover, .multichar-arrow-left > i:hover {
+ color: #f5f6faaf;
+}
+
+.multichar-play-button {
+ position: absolute;
+ top: 32vh;
+ left: 3.5vh;
+ width: 80%;
+ height: 4vh;
+ border-radius: 5px;
+ background-color: #498f54;
+ line-height: 3.8vh;
+ text-align: center;
+ color: #f5f6fa;
+ font-size: 2vh;
+ font-weight: 550;
+}
+
+.multichar-delete-button {
+ position: absolute;
+ top: 37vh;
+ left: 3.5vh;
+ width: 80%;
+ height: 4vh;
+ border-radius: 5px;
+ background-color: #8f4949;
+ line-height: 3.8vh;
+ text-align: center;
+ color: #f5f6fa;
+ font-size: 2vh;
+ font-weight: 550;
+}
+
+.multichar-play-button:hover {
+ background-color: #498f53e3;
+}
+
+.multichar-delete-button:hover {
+ background-color: #8f4949e1;
+}
+
+.multichar-new-name {
+ position: absolute;
+ display: none;
+ top: 13vh;
+ left: 3.5vh;
+ width: 80%;
+ height: 16vh;
+ background-color: #30475e;
+ border: 2px solid rgb(29, 29, 29);
+}
+
+.input {
+ background: none;
+ border: none;
+ outline: none;
+ font-size: 1.4vh;    
+ color: #ebebeb;
+ font-weight: 550;
+ letter-spacing: .1vh;
+ border-bottom: 2px solid white;
+ width: 28vh;
+}
+
+.name {
+ position: absolute;
+ left: 1vh;
+ top: 1vh;
+}
+
+.lastname {
+ position: absolute;
+ left: 1vh;
+ top: 5vh;
+}
+
+.date {
+ position: absolute;
+ left: 1vh;
+ top: 9vh;
+}
+
+.gender {
+ position: absolute;
+ left: 1vh;
+ top: 13vh;  
+ background-color: #30475e;
+}
+
+.input::-webkit-calendar-picker-indicator {
+ display: none;
+}
+
+/* Tekst */
+/* #f5f6fa; */
+/* Achtergronden */
+/* #222831;  */
+/* #30475e; */

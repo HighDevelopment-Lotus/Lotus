@@ -1,0 +1,31 @@
+.main-pass-container {
+    position: absolute;
+    display: none;
+    top: 35vh;
+}
+
+.police-pass {
+    z-index: -1;
+    width: 45vh;
+    height: 35vh;
+}
+
+.police-image {
+    position: absolute;
+    top: 4vh;
+    left: 6.4vh;
+    width: 10.5vh;
+    height: 11.5vh;
+}
+
+.police-pass-name {
+    position: absolute;
+    top: 23vh;
+    left: 2.2vh;
+    width: 18.7vh;
+    height: 5vh;
+    text-align: center;
+    color: black;
+    font-size: 1.8vh;
+    font-weight: 600;
+}
