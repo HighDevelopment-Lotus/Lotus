@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVehicleModelInfoVarGlobal>     
+  <Kits>
+    <Item>
+      <kitName>1393_bimx_modkit</kitName>
+      <id value="1393"/>
+      <kitType>MKT_SPECIAL</kitType>
+      <visibleMods>
+        <Item>
+          <modelName>bimx_seat1</modelName>
+          <modShopLabel>BIMX_SEAT1</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item>misc_g</Item>
+          </turnOffBones>
+          <type>VMT_BONNET</type>
+          <bone>chassis</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="15" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <Item>
+          <modelName>bimx_null</modelName>
+          <modShopLabel>BIMX_PEG1</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item>misc_j</Item>
+            <Item>misc_k</Item>
+            <Item>seat_r</Item>
+          </turnOffBones>
+          <type>VMT_BUMPER_FRONT</type>
+          <bone>chassis</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="15" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <Item>
+          <modelName>bimx_peg1</modelName>
+          <modShopLabel>BIMX_PEG2</modShopLabel>
+          <linkedModels>
+            <Item>bimx_peg2</Item>
+          </linkedModels>
+          <turnOffBones />
+          <type>VMT_BUMPER_FRONT</type>
+          <bone>forks_u</bone>
+          <collisionBone>wheel_lf</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="15" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <Item>
+          <modelName>bimx_peg1</modelName>
+          <modShopLabel>BIMX_PEG3</modShopLabel>
+          <linkedModels>
+            <Item>bimx_peg2</Item>
+          </linkedModels>
+          <turnOffBones>
+            <Item>misc_j</Item>
+            <Item>misc_k</Item>
+            <Item>seat_r</Item>
+          </turnOffBones>
+          <type>VMT_BUMPER_FRONT</type>
+          <bone>forks_u</bone>
+          <collisionBone>wheel_lf</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="15" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <Item>
+          <modelName>bimx_peg1</modelName>
+          <modShopLabel>BIMX_PEG4</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item>misc_k</Item>
+          </turnOffBones>
+          <type>VMT_BUMPER_FRONT</type>
+          <bone>forks_u</bone>
+          <collisionBone>wheel_lf</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="15" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <Item>
+          <modelName>bimx_peg2</modelName>
+          <modShopLabel>BIMX_PEG5</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item>misc_j</Item>
+          </turnOffBones>
+          <type>VMT_BUMPER_FRONT</type>
+          <bone>forks_u</bone>
+          <collisionBone>wheel_lf</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="15" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <Item>
+          <modelName>bimx_livery1</modelName>
+          <modShopLabel>BIMX_LIV1</modShopLabel>
+          <linkedModels />
+          <turnOffBones />
+          <type>VMT_LIVERY_MOD</type>
+          <bone>chassis</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="15" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <Item>
+          <modelName>bimx_livery2</modelName>
+          <modShopLabel>BIMX_LIV2</modShopLabel>
+          <linkedModels />
+          <turnOffBones />
+          <type>VMT_LIVERY_MOD</type>
+          <bone>chassis</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="15" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <Item>
+          <modelName>bimx_livery3</modelName>
+          <modShopLabel>BIMX_LIV3</modShopLabel>
+          <linkedModels />
+          <turnOffBones />
+          <type>VMT_LIVERY_MOD</type>
+          <bone>chassis</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="15" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <Item>
+          <modelName>bimx_livery4</modelName>
+          <modShopLabel>BIMX_LIV4</modShopLabel>
+          <linkedModels />
+          <turnOffBones />
+          <type>VMT_LIVERY_MOD</type>
+          <bone>chassis</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="15" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <Item>
+          <modelName>bimx_livery5</modelName>
+          <modShopLabel>BIMX_LIV5</modShopLabel>
+          <linkedModels />
+          <turnOffBones />
+          <type>VMT_LIVERY_MOD</type>
+          <bone>chassis</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="15" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <Item>
+          <modelName>bimx_livery6</modelName>
+          <modShopLabel>BIMX_LIV6</modShopLabel>
+          <linkedModels />
+          <turnOffBones />
+          <type>VMT_LIVERY_MOD</type>
+          <bone>chassis</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="15" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+      </visibleMods>
+      <linkMods>
+        <Item>
+          <modelName>bimx_peg1</modelName>
+          <bone>forks_u</bone>
+          <turnOffExtra value="false" />
+        </Item>
+        <Item>
+          <modelName>bimx_peg2</modelName>
+          <bone>forks_u</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      </linkMods>
+      <statMods/>
+      <slotNames/>
+      <liveryNames/>
+      <livery2Names/>
+    </Item>
+  </Kits>
+</CVehicleModelInfoVarGlobal>
