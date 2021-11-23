@@ -1062,9 +1062,7 @@ RegisterNUICallback('setCurrentPed', function(data, cb)
 end)
 
 RegisterNUICallback('saveClothing', function(data)
-    if data ~= nil then
-        SaveSkin(data)
-    end
+    SaveSkin(data)
 end)
 
 function SaveSkin(skinData)
