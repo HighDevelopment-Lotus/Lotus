@@ -15,7 +15,7 @@ Config.Webhooks = {
     ["realestate"] = "",
 
     -- Inventory Nog niet gemaakt.
-    --["shops"] = "https://discordapp.com/api/webhooks/729001532909027338/8M9HkmLZx5K8hpehduO3qIHVtgsD8A1KowAMvoHLetwNgdUX3XibpvdpUqbzgRRtRpAy",
+    --["shops"] = "",
     ["robbing"] = "",
     ["drop"] = "",    
     ["trunk"] = "",    
