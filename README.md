@@ -16,3 +16,5 @@
 - That are not using capital letters "mike"
 - That are way too long
 - An incorrect birthdate (Like a month that doesnt exist for example: 01-13-2021)
+ 3. **My server keeps shutting down after entering my Forum Username and Licensekey?** Theres only one answer for that:
+ Link your server ip to your account on https://pepe-framework.com/account/account-details as shown here: https://prnt.sc/20ougle
