@@ -1062,10 +1062,12 @@ RegisterNUICallback('setCurrentPed', function(data, cb)
 end)
 
 RegisterNUICallback('saveClothing', function(data)
-    SaveSkin()
+    if data ~= nil then
+        SaveSkin(data)
+    end
 end)
 
-function SaveSkin()
+function SaveSkin(skinData)
 	local model = GetEntityModel(GetPlayerPed(-1))
     clothing = json.encode(skinData)
 	TriggerServerEvent("ls-clothing:saveSkin", model, clothing)
