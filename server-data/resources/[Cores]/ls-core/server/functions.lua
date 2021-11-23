@@ -3,7 +3,7 @@ LSCore.Functions = {}
 LSCore.Functions.ExecuteSql = function(wait, query, cb)
 	local rtndata = {}
 	local waiting = true
-	exports['ghmattimysql']:execute(query, {}, function(data)
+	exports['oxmysql']:execute(query, {}, function(data)
 		if cb ~= nil and wait == false then
 			cb(data)
 		end
