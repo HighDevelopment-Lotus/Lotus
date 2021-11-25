@@ -11,8 +11,6 @@ Config.Money.MoneyTypes = {['cash'] = 0, ['bank'] = 500, ['casino'] = 0}
 Config.Money.DontAllowMinus = {'cash', 'casino'}
 Config.Money.ConfigDefaultCrypto = {['Bitflop'] = 0, ['Bittop'] = 0}
 
-Config.Player.MaxWeight = 130000
-Config.Player.MaxInvSlots = 45
 Config.Server.License = "LOT" -- Licensekey from pepe-framework.com
 Config.Server.Username = "" -- Username on pepe-framework.com
 Config.Player.Bloodtypes = {
