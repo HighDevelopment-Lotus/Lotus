@@ -78,7 +78,8 @@ Citizen.CreateThread(function()
                             exports['ls-ui']:ShowInteraction('[E] Kledingkast', 'primary')
                         end
                         if IsControlJustReleased(0, 38) then
-                            TriggerEvent('ls-clothing:client:openOutfitMenu')
+                            --TriggerEvent('ls-clothing:client:openOutfitMenu')
+                             TriggerEvent('fivem-appearance:outfitsMenu')
                         end
                     end
                     local Distance = #(PlayerCoords - vector3(Config.Locations[1]['Coords'].x - OffSets.logout.x, Config.Locations[1]['Coords'].y - OffSets.logout.y, Config.Locations[1]['Coords'].z - OffSets.logout.z))
@@ -127,7 +128,8 @@ AddEventHandler('ls-appartments:client:enter:appartment', function(IsNew)
             IsInAppartment = true
             AppartmentData, OffSets = Appartment[1], Appartment[2]
             Citizen.Wait(500)
-            TriggerEvent('ls-clothing:client:CreateFirstCharacter')
+           -- TriggerEvent('ls-clothing:client:CreateFirstCharacter')
+           TriggerEvent('fivem-appearance:client:CreateFirstCharacter')
         end)
     else
         if not UsingDoor then
