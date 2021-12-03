@@ -21,7 +21,7 @@ local LSCore, isLoggedIn= exports['ls-core']:GetCoreObject(), {}, false
 RegisterNetEvent('LSCore:Client:OnPlayerLoaded')
 AddEventHandler('LSCore:Client:OnPlayerLoaded', function()
     Citizen.SetTimeout(2000, function()
-        LSCore.Functions.TriggerCallTerug('fivem-appearance:getPlayerSkin', function(appearance)
+        LSCore.Functions.TriggerCallback('fivem-appearance:getPlayerSkin', function(appearance)
 		exports['fivem-appearance']:setPlayerAppearance(appearance)
         isLoggedIn = true
 		end)
@@ -29,7 +29,7 @@ AddEventHandler('LSCore:Client:OnPlayerLoaded', function()
 end)
 
 RegisterCommand('reloadskin', function()
-	LSCore.Functions.TriggerCallTerug('fivem-appearance:getPlayerSkin', function(appearance)
+	LSCore.Functions.TriggerCallback('fivem-appearance:getPlayerSkin', function(appearance)
 		exports['fivem-appearance']:setPlayerAppearance(appearance)
 	end)
 end)
