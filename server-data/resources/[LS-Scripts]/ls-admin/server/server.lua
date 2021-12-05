@@ -129,8 +129,9 @@ end)
 
 RegisterServerEvent('ls-admin:server:opem:skin:menu')
 AddEventHandler('ls-admin:server:opem:skin:menu', function(TargetPlayer)
-    TriggerClientEvent("ls-clothing:client:openMenu", TargetPlayer)
-end)
+ --   TriggerClientEvent("ls-clothing:client:openMenu", TargetPlayer)
+      TriggerClientEvent("fivem-appearance:outfitsMenu", TargetPlayer)
+en
 
 RegisterServerEvent('ls-admin:server:give:item')
 AddEventHandler('ls-admin:server:give:item', function(ItemName, ItemAmount)

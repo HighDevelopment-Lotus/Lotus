@@ -169,7 +169,8 @@ Citizen.CreateThread(function()
                                     exports['ls-ui']:ShowInteraction('[E] Kledingkast', 'primary')
                                 end
                                 if IsControlJustReleased(0, 38) then
-                                    TriggerEvent('ls-clothing:client:openOutfitMenu')
+                                 --   TriggerEvent('ls-clothing:client:openOutfitMenu')
+                                 TriggerEvent('fivem-appearance:outfitsMenu')
                                 end
                             end
                         end
