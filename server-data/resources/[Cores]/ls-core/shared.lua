@@ -77,7 +77,6 @@ Shared.Gangs = {
 		} 
 	},
 }
-
 Shared.Jobs = {
 	["unemployed"] = {
 		label = "Unemployed",
@@ -105,16 +104,6 @@ Shared.Jobs = {
 		grades = { 
 			[1] = { 
 				label = "Driver", 
-				payment = 200, 
-			},
-		} 
-	},
-	["gopostal"] = { 
-		label = "GoPostal", 
-		defaultDuty = false, 
-		grades = { 
-			[1] = { 
-				label = "Delivery Driver", 
 				payment = 200, 
 			},
 		} 
@@ -159,26 +148,6 @@ Shared.Jobs = {
 				payment = 200, 
 			},
 		} 
-	},
-	["trucker"] = { 
-		label = "Cumbo", 
-		defaultDuty = true, 
-		grades = { 
-			[1] = { 
-				label = "Delivery Driver", 
-				payment = 200, 
-			}, 
-		} 
-	},
-	["takeaway"] = {
-		label = "Takeaway",
-		defaultDuty = true,
-		grades = {
-			[1] = {
-				label = "Delivery Driver",
-				payment = 200,
-			},
-		}
 	},
 	["burger"] = {
 		label = "Burgershot",
@@ -345,16 +314,6 @@ Shared.Jobs = {
 			},
 		}
 	},
-	["electronic"] = {
-		label = "LSDWP",
-		defaultDuty = true,
-		grades = {
-			[1] = {
-				label = "Electrician",
-				payment = 200,
-			},
-		}
-	},
 	["judge"] = {
 		label = "DOJ",
 		defaultDuty = true,
@@ -412,21 +371,6 @@ Shared.Jobs = {
 	},
 	["stripclub"] = {
 		label = "Stripclub",
-		defaultDuty = false,
-		grades = {
-			[1] = {
-				label = "Employee",
-				payment = 200,
-			},
-			[2] = {
-                label = "Boss",
-				isboss = true,
-                payment = 250,
-			},
-		}
-	},
-	["pizza"] = {
-		label = "Pizzeria",
 		defaultDuty = false,
 		grades = {
 			[1] = {

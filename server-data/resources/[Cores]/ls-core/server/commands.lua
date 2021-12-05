@@ -95,14 +95,21 @@ LSCore.Commands.Add("setmoney", "Zet het geld voor een speler", {{name="id", hel
 	end
 end, "admin")
 
-LSCore.Commands.Add("setjob", "Geef een baan aan een speler", {{name="id", help="Speler ID"}, {name="job", help="Naam van een baan"}}, true, function(source, args)
-	local Player = LSCore.Functions.GetPlayer(tonumber(args[1]))
-	if Player ~= nil then
-		Player.Functions.SetJob(tostring(args[2]))
-	else
-		TriggerClientEvent('chatMessage', source, "SYSTEM", "error", "Speler is niet online!")
-	end
+LSCore.Commands.Add("setjob", "Voeg een speler toe aan een baan", {{name="id", help="Player ID"}, {name="job", help="Baan"}, {name="grade", help="Rang"}}, true, function(source, args)
+    local Player = LSCore.Functions.GetPlayer(tonumber(args[1]))
+    if Player ~= nil then
+        Player.Functions.SetJob(tostring(args[2]), tonumber(args[3]))
+    else
+        TriggerClientEvent('chatMessage', source, "SYSTEM", "error", "Speler is niet online!")
+    end
 end, "admin")
+
+
+LSCore.Commands.Add("baan", "Bekijk jouw huidige baan", {}, false, function(source, args)
+    local src = source
+    local Player = LSCore.Functions.GetPlayer(src)
+    TriggerClientEvent('chatMessage', source, "SYSTEM", "warning", "Baan: "..Player.PlayerData.job.label.." - "..Player.PlayerData.job.gradelabel)
+end)
 
 LSCore.Commands.Add("setgang", "Geef een gang positie aan een speler", {{name="id", help="Speler ID"}, {name="gang", help="Naam van de gang"}}, true, function(source, args)
 	local Player = LSCore.Functions.GetPlayer(tonumber(args[1]))
