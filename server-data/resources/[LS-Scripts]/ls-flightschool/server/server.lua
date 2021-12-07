@@ -24,7 +24,7 @@ LSCore.Commands.Add("setflight", "Neem neen vliegschool medewerker aan", {{name=
         if TargetPlayer ~= nil then
             TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent aangenomen als vliegschool medewerker! gefeliciteerd!', 'success')
             TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' aangenomen als vliegschool medewerker!', 'success')
-            TargetPlayer.Functions.SetJob('flightschool')
+            TargetPlayer.Functions.SetJob('flightschool', 1)
         end
     end
 end)
@@ -36,7 +36,7 @@ LSCore.Commands.Add("fireflight", "Ontsla een vliegschool medewerker", {{name="i
         if TargetPlayer ~= nil and TargetPlayer.PlayerData.job.name == 'flightschool' then
             TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent ontslagen!', 'error')
             TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' ontslagen!', 'success')
-            TargetPlayer.Functions.SetJob('unemployed')
+            TargetPlayer.Functions.SetJob('unemployed', 1)
         end
     end
 end)

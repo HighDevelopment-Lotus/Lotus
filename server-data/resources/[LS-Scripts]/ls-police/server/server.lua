@@ -188,7 +188,7 @@ LSCore.Commands.Add("setpolice", "Neem neen agent aan", {{name="id", help="Spele
         if TargetPlayer ~= nil then
             TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent aangenomen als agent! gefeliciteerd!', 'success')
             TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' aangenomen als agent!', 'success')
-            TargetPlayer.Functions.SetJob('police')
+            TargetPlayer.Functions.SetJob('police', 1)
         end
     end
 end)
@@ -209,7 +209,7 @@ LSCore.Commands.Add("firepolice", "Ontsla een agent", {{name="id", help="Speler 
         if TargetPlayer ~= nil and TargetPlayer.PlayerData.job.name == 'police' then
             TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent ontslagen!', 'error')
             TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' ontslagen!', 'success')
-            TargetPlayer.Functions.SetJob('unemployed')
+            TargetPlayer.Functions.SetJob('unemployed', 1)
         end
     end
 end)

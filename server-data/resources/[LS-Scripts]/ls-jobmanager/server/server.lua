@@ -179,7 +179,7 @@ LSCore.Commands.Add("settaxi", "Neem neen taxi aan", {{name="id", help="Speler I
         if TargetPlayer ~= nil then
             TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent aangenomen als taxi! gefeliciteerd!', 'success')
             TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' aangenomen als taxi!', 'success')
-            TargetPlayer.Functions.SetJob('taxi')
+            TargetPlayer.Functions.SetJob('taxi', 1)
         end
     end
 end)
@@ -191,7 +191,7 @@ LSCore.Commands.Add("firetaxi", "Ontsla een taxi", {{name="id", help="Speler ID"
         if TargetPlayer ~= nil and TargetPlayer.PlayerData.job.name == 'taxi' then
             TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent ontslagen!', 'error')
             TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' ontslagen!', 'success')
-            TargetPlayer.Functions.SetJob('unemployed')
+            TargetPlayer.Functions.SetJob('unemployed', 1)
         end
     end
 end)

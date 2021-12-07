@@ -55,7 +55,7 @@ LSCore.Commands.Add("jail", "Stop een burger in de cel", {{name="id", help="Spel
                 if Time > 0 then
                     local Name = JailPlayer.PlayerData.charinfo.firstname..' '..JailPlayer.PlayerData.charinfo.lastname
                     if JailPlayer.PlayerData.job.name ~= 'police' and JailPlayer.PlayerData.job.name ~= 'ambulance' then
-                        JailPlayer.Functions.SetJob("unemployed")
+                        JailPlayer.Functions.SetJob('unemployed', 1)
                         TriggerClientEvent('LSCore:Notify', JailPlayer.PlayerData.source, "Je bent werkloos..", 'error')
                     end
                     JailPlayer.Functions.SetMetaData("jailtime", Time)

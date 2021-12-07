@@ -109,7 +109,7 @@ LSCore.Commands.Add("setambulance", "Neem neen ambulancier aan", {{name="id", he
       	if TargetPlayer ~= nil then
       	    TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent aangenomen als ambulancier! gefeliciteerd!', 'success')
       	    TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' aangenomen als ambulancier!', 'success')
-      	    TargetPlayer.Functions.SetJob('ambulance')
+      	    TargetPlayer.Functions.SetJob('ambulance', 1)
       	end
     end
 end)
@@ -121,7 +121,7 @@ LSCore.Commands.Add("fireambulance", "Ontsla een ambulancier", {{name="id", help
       	if TargetPlayer ~= nil and TargetPlayer.PlayerData.job.name == 'ambulance' then
       	  	TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent ontslagen!', 'error')
       	  	TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' ontslagen!', 'success')
-      	  	TargetPlayer.Functions.SetJob('unemployed')
+      	  	TargetPlayer.Functions.SetJob('unemployed', 1)
       	end
     end
 end)
