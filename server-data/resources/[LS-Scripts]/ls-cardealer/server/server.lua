@@ -84,7 +84,7 @@ LSCore.Commands.Add("setcardealer", "Neem een cardealer medewerker aan", {{name=
         if TargetPlayer ~= nil then
             TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent aangenomen als Cardealer medewerker! gefeliciteerd!', 'success')
             TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' aangenomen als Cardealer medewerker!', 'success')
-            TargetPlayer.Functions.SetJob('cardealer')
+            TargetPlayer.Functions.SetJob('cardealer', 1)
         end
     end
 end)
@@ -96,7 +96,7 @@ LSCore.Commands.Add("firecardealer", "Ontsla een cardealer medewerker", {{name="
         if TargetPlayer ~= nil and TargetPlayer.PlayerData.job.name == 'cardealer' then
             TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent ontslagen!', 'error')
             TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' ontslagen!', 'success')
-            TargetPlayer.Functions.SetJob('unemployed')
+            TargetPlayer.Functions.SetJob('unemployed', 1)
         end
     end
 end)

@@ -130,7 +130,7 @@ LSCore.Commands.Add("setburger", "Neem een burgershot medewerker aan", {{name="i
         if TargetPlayer ~= nil then
             TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent aangenomen als burgershot medewerker! gefeliciteerd!', 'success')
             TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' aangenomen als burgershot medewerker!', 'success')
-            TargetPlayer.Functions.SetJob('burger')
+            TargetPlayer.Functions.SetJob('burger', 1)
         end
     end
 end)
@@ -142,7 +142,7 @@ LSCore.Commands.Add("fireburger", "Ontsla een burgershot medewerker", {{name="id
         if TargetPlayer ~= nil and TargetPlayer.PlayerData.job.name == 'burger' then
             TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent ontslagen!', 'error')
             TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' ontslagen!', 'success')
-            TargetPlayer.Functions.SetJob('unemployed')
+            TargetPlayer.Functions.SetJob('unemployed', 1)
         end
     end
 end)

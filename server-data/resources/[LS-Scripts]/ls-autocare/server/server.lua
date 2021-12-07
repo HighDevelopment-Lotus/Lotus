@@ -251,13 +251,13 @@ LSCore.Commands.Add("setmechanic", "Neem neen monteur aan", {{name="id", help="S
         if TargetPlayer ~= nil then
             TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent aangenomen als monteur! gefeliciteerd!', 'success')
             TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' aangenomen als agent!', 'success')
-            TargetPlayer.Functions.SetJob('mechanic')
+            TargetPlayer.Functions.SetJob('mechanic', 1)
         end
     elseif  Player.PlayerData.metadata['ishighcommand'] and Player.PlayerData.job.name == 'repairshop' then
         if TargetPlayer ~= nil then
             TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent aangenomen als monteur! gefeliciteerd!', 'success')
             TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' aangenomen als monteur!', 'success')
-            TargetPlayer.Functions.SetJob('repairshop')
+            TargetPlayer.Functions.SetJob('repairshop', 1)
         end
     end
 end)
@@ -269,13 +269,13 @@ LSCore.Commands.Add("firemechanic", "Ontsla een monteur", {{name="id", help="Spe
         if TargetPlayer ~= nil and TargetPlayer.PlayerData.job.name == 'mechanic' then
             TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent ontslagen!', 'error')
             TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' ontslagen!', 'success')
-            TargetPlayer.Functions.SetJob('unemployed')
+            TargetPlayer.Functions.SetJob('unemployed', 1)
         end
     elseif Player.PlayerData.metadata['ishighcommand'] and Player.PlayerData.job.name == 'repairshop' then
         if TargetPlayer ~= nil and TargetPlayer.PlayerData.job.name == 'repairshop' then
             TriggerClientEvent('LSCore:Notify', TargetPlayer.PlayerData.source, 'Je bent ontslagen!', 'error')
             TriggerClientEvent('LSCore:Notify', Player.PlayerData.source, 'Je hebt '..TargetPlayer.PlayerData.charinfo.firstname..' '..TargetPlayer.PlayerData.charinfo.lastname..' ontslagen!', 'success')
-            TargetPlayer.Functions.SetJob('unemployed')
+            TargetPlayer.Functions.SetJob('unemployed', 1)
         end
     end
 end)
