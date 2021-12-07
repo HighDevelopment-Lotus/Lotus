@@ -55,7 +55,7 @@ RegisterServerEvent('ls-cityhall:server:request:work')
 AddEventHandler('ls-cityhall:server:request:work', function(data)
     local Player = LSCore.Functions.GetPlayer(source)
     local JobInfo = LSCore.Shared.Jobs[data['Id']]
-    Player.Functions.SetJob(data['Id'])
+    Player.Functions.SetJob(data['Id'], 1)
     TriggerClientEvent('LSCore:Notify', source, 'Gefeliciteerd met je nieuwe baan! ('..JobInfo.label..')')
 end)
 
