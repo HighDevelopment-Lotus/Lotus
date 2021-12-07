@@ -26,15 +26,6 @@ CREATE TABLE `players` (
   `hudsettings` text DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-CREATE TABLE `players_outfits` (
-  `id` int(11) NOT NULL,
-  `citizenid` varchar(50) DEFAULT NULL,
-  `name` longtext DEFAULT NULL,
-  `ped` longtext DEFAULT NULL,
-  `components` longtext DEFAULT NULL,
-  `props` longtext DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
 CREATE TABLE `players_pd_presets` (
   `id` int(11) NOT NULL,
   `name` longtext DEFAULT NULL,
