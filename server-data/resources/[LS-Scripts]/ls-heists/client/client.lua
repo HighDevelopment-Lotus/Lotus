@@ -25,14 +25,7 @@ AddEventHandler('ls-police:SetCopCount', function(Amount)
     CurrentCops = Amount
 end)
 
--- Code
-
--- // Loops \\ --
-
--- // Events \\ --
-
--- // Functions \\ --
-
+-- Functions
 function SpawnBankProps()
     for k, v in pairs(Config.Banks) do
         if v['Prop'] ~= nil then
