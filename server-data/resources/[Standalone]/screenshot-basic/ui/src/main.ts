@@ -16,9 +16,6 @@ import {
 class ScreenshotRequest {
     encoding: 'jpg' | 'png' | 'webp';
     quality: number;
-    headers: any;
-    crop: any;
-    trim: boolean;
 
     correlation: string;
 
@@ -67,28 +64,30 @@ class ScreenshotUI {
         const sceneRTT: any = new Scene();
 
         const rtTexture = new WebGLRenderTarget( window.innerWidth, window.innerHeight, { minFilter: LinearFilter, magFilter: NearestFilter, format: RGBAFormat, type: UnsignedByteType } );
-        const gameTexture: any = new CfxTexture();
+        const gameTexture: any = new CfxTexture( );
         gameTexture.needsUpdate = true;
-   
-        const material = new ShaderMaterial({
+
+        const material = new ShaderMaterial( {
+
             uniforms: { "tDiffuse": { value: gameTexture } },
             vertexShader: `
-                varying vec2 vUv;
+			varying vec2 vUv;
 
-                void main() {
-                    vUv = vec2(uv.x, 1.0-uv.y); // fuck gl uv coords
-                    gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
-                }
-            `,
+			void main() {
+				vUv = vec2(uv.x, 1.0-uv.y); // fuck gl uv coords
+				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+			}
+`,
             fragmentShader: `
-                varying vec2 vUv;
-                uniform sampler2D tDiffuse;
+			varying vec2 vUv;
+			uniform sampler2D tDiffuse;
 
-                void main() {
-                    gl_FragColor = texture2D( tDiffuse, vUv );
-                }
-            `
-        });
+			void main() {
+				gl_FragColor = texture2D( tDiffuse, vUv );
+			}
+`
+
+        } );
 
         this.material = material;
 
@@ -162,6 +161,7 @@ class ScreenshotUI {
 
         // draw the image on the canvas
         const d = new Uint8ClampedArray(read.buffer);
+
         const cxt = canvas.getContext('2d');
         cxt.putImageData(new ImageData(d, window.innerWidth, window.innerHeight), 0, 0);
 
@@ -185,20 +185,8 @@ class ScreenshotUI {
         }
 
         // actual encoding
-        let imageURL = canvas.toDataURL(type, request.quality);
+        const imageURL = canvas.toDataURL(type, request.quality);
 
-        // https://stackoverflow.com/questions/35033357/how-do-i-extract-a-portion-of-an-image-in-canvas-and-use-it-as-background-image
-        let crop = function(canvas, offsetX, offsetY, width, height) {
-            let buffer = document.createElement('canvas');
-            let b_ctx = buffer.getContext('2d');
-
-            buffer.width = width;
-            buffer.height = height;
-            b_ctx.drawImage(canvas, offsetX, offsetY, width, height, 0, 0, buffer.width, buffer.height);
-                
-            return buffer.toDataURL();
-        };
-        
         const getFormData = () => {
             const formData = new FormData();
             formData.append(request.targetField, dataURItoBlob(imageURL), `screenshot.${request.encoding}`);
@@ -206,26 +194,14 @@ class ScreenshotUI {
             return formData;
         };
 
-        let body = (request.targetField) ? getFormData() : JSON.stringify({
-            data: imageURL,
-            id: request.correlation
-        });
-
-        if ( request.crop ) {
-            imageURL = crop(canvas, request.crop.offsetX, request.crop.offsetY, request.crop.width, request.crop.height);
-        }
-
-        if (request.targetField === 'imgur') {
-            body = imageURL.replace(/^data:image\/[a-z]+;base64,/, '');
-        }
-  
         // upload the image somewhere
         fetch(request.targetURL, {
             method: 'POST',
             mode: 'cors',
-            cache: 'no-store',
-            headers: request.headers,
-            body: body
+            body: (request.targetField) ? getFormData() : JSON.stringify({
+                data: imageURL,
+                id: request.correlation
+            })
         })
         .then(response => response.text())
         .then(text => {
@@ -233,7 +209,6 @@ class ScreenshotUI {
                 fetch(request.resultURL, {
                     method: 'POST',
                     mode: 'cors',
-                    cache: 'no-store',
                     body: JSON.stringify({
                         data: text,
                         id: request.correlation

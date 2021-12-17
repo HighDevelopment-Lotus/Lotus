@@ -1,6 +1,5 @@
-fx_version 'adamant'
-
-game 'gta5'
+fx_version 'bodacious'
+game 'common'
 
 client_script 'dist/client.js'
 server_script 'dist/server.js'
