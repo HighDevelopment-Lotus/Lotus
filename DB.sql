@@ -207,7 +207,7 @@ ALTER TABLE `players`
   ADD PRIMARY KEY (`id`),
   ADD KEY `citizenid` (`citizenid`);
 
-ALTER TABLE `players_outfits`
+ALTER TABLE `player_outfits`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id_UNIQUE` (`id`);
 
@@ -277,7 +277,7 @@ ALTER TABLE `server_motordealer`
 ALTER TABLE `players`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
-ALTER TABLE `players_outfits`
+ALTER TABLE `player_outfits`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 ALTER TABLE `players_pd_presets`
