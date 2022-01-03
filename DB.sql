@@ -144,21 +144,22 @@ CREATE TABLE `player_skins` (
   `skin` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-CREATE TABLE `player_vehicles` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `player_vehicles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `citizenid` varchar(50) DEFAULT NULL,
   `vehicle` varchar(50) DEFAULT NULL,
   `plate` varchar(50) DEFAULT NULL,
   `garage` varchar(50) DEFAULT 'Blokken Parking',
   `state` varchar(50) DEFAULT 'in',
   `parts` varchar(300) DEFAULT '{"Transmissie":{"Class":"B","Procent":100},"Brandstof Injectoren":{"Class":"B","Procent":100},"Aandrijfas":{"Class":"B","Procent":100},"Koppeling":{"Class":"B","Procent":100},"Motor":{"Class":"B","Procent":100},"Remmen":{"Class":"B","Procent":100}}',
-  `mods` text DEFAULT NULL,
+  `mods` text,
   `metadata` varchar(1000) DEFAULT '{"Engine":1000.0,"Body":1000.0,"Fuel":100.0}',
   `selling` varchar(50) NOT NULL DEFAULT 'false',
-  `sellprice` int(11) NOT NULL DEFAULT 0,
-  `depotprice` int(11) DEFAULT 100,
-  `impoundreason` varchar(100) DEFAULT 'Geen Reden.'
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `sellprice` int(11) NOT NULL DEFAULT '0',
+  `depotprice` int(11) DEFAULT '100',
+  `impoundreason` varchar(100) DEFAULT 'Geen Reden.',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4791 DEFAULT CHARSET=latin1;
 
 CREATE TABLE `server_bans` (
   `id` int(11) NOT NULL,
@@ -255,9 +256,6 @@ ALTER TABLE `player_phone_contacts`
 ALTER TABLE `player_skins`
   ADD PRIMARY KEY (`id`);
 
-ALTER TABLE `player_vehicles`
-  ADD PRIMARY KEY (`id`);
-
 ALTER TABLE `server_bans`
   ADD PRIMARY KEY (`id`);
 
@@ -317,9 +315,6 @@ ALTER TABLE `player_phone_contacts`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 ALTER TABLE `player_skins`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
-ALTER TABLE `player_vehicles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 ALTER TABLE `server_bans`
