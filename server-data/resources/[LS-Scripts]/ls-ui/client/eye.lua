@@ -227,18 +227,21 @@ function ImportEyeData(data)
     if Config.ObjectOptions[GetHashKey(data['Prop'])] == nil then
         local Job = data['Job'] ~= nil and data['Job'] or false
         local Duty = data['Duty'] ~= nil and data['Duty'] or false
+        local EventParameter = data['EventParameter'] ~= nil and data['EventParameter'] or ''
+        local Enabled = data['Enabled'] or function()
+            return not exports['ls-hospital']:GetDeathStatus()
+        end
         Config.ObjectOptions[GetHashKey(data['Prop'])] = {
             ['Options'] = {
                 [1] = {
                     ['Job'] = Job,
                     ['UseDuty'] = Duty,
                     ['Name'] = data['Name'],
-                    ['EventType'] = data['Type'],
+                    ['EventType'] = data['EventType'],
                     ['Logo'] = data['Logo'],
-                    ['EventName'] = data['Event'], 
-                    ['Enabled'] = function()
-                        return true
-                    end,
+                    ['EventName'] = data['EventName'],
+                    ['EventParameter'] = EventParameter,
+                    ['Enabled'] = Enabled,
                 },
             },
         }
