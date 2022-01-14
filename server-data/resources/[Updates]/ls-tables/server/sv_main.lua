@@ -49,21 +49,21 @@ end)
 LSCore.Functions.CreateUseableItem("cracktable", function(source, item)
 	local Player = LSCore.Functions.GetPlayer(source)
 	if Player.Functions.GetItemBySlot(item.slot) ~= nil then
-        TriggerClientEvent('ls-fishing:client:use:cracktable', source)
+        TriggerClientEvent('ls-tables:client:place:table', source, 'Meth')
     end
 end)
 
 LSCore.Functions.CreateUseableItem("weedtable", function(source, item)
 	local Player = LSCore.Functions.GetPlayer(source)
 	if Player.Functions.GetItemBySlot(item.slot) ~= nil then
-        TriggerClientEvent('ls-fishing:client:use:weedtable', source)
+        TriggerClientEvent('ls-tables:client:place:table', source), 'Meth'
     end
 end)
 
 LSCore.Functions.CreateUseableItem("methtable", function(source, item)
 	local Player = LSCore.Functions.GetPlayer(source)
 	if Player.Functions.GetItemBySlot(item.slot) ~= nil then
-        TriggerClientEvent('ls-fishing:client:use:methtable', source)
+        TriggerClientEvent('ls-tables:client:place:table', source, 'Meth')
     end
 end)
 

@@ -9,7 +9,7 @@ AddEventHandler('ls-tables:client:process:table', function(Type)
         Type = Type.eventparameter
     end
 
-    local Item = Config.Tables[Type]['ItemAfterProcess']
+    local Item = Config.Tables[Type]['ItemRequired']
 
     LSCore.Functions.TriggerCallback('LSCore:HasItem', function(HasItem)
         if HasItem then
