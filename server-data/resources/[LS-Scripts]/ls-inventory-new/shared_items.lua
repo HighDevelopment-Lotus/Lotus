@@ -3070,4 +3070,37 @@ Shared.ItemList = {
 		["combinable"] = nil,   
 		["description"] = "???"
 	},
+	["cracktable"] = {
+		["name"] = "cracktable", 			 	
+		["label"] = "Crack Tafel", 					
+		["weight"] = 9000, 		
+		["type"] = "item", 		
+		['ismetal'] = false, 
+		["image"] = "coketable.png", 		
+		["unique"] = false, 	
+		["combinable"] = nil,   
+		["description"] = "Je zult hier wel iets cools mee kunnen doen..."
+	},
+	["weedtable"] = {
+		["name"] = "weedtable", 			 	
+		["label"] = "Wiet Tafel", 					
+		["weight"] = 6000, 		
+		["type"] = "item", 		
+		['ismetal'] = false, 
+		["image"] = "weedtable.png", 		
+		["unique"] = false, 	
+		["combinable"] = nil,   
+		["description"] = "Je zult hier wel iets cools mee kunnen doen..."
+	},
+	["methtable"] = {
+		["name"] = "methtable", 			 	
+		["label"] = "Meth Tafel", 					
+		["weight"] = 8000, 		
+		["type"] = "item", 		
+		['ismetal'] = false, 
+		["image"] = "methtable.png", 		
+		["unique"] = false, 	
+		["combinable"] = nil,   
+		["description"] = "Ik weet hier niks van maar het is methtastic..."
+	},
 }
