@@ -225,6 +225,86 @@ Config.ObjectOptions = {
             },
         },
     },
+
+    [GetHashKey('bkr_prop_coke_table01a')] = {
+        ['Options'] = {
+            [1] = {
+                ['Name'] = 'Verwerk Crack',
+                ['EventType'] = 'Client',
+                ['Logo'] = '<i class="fas fa-cannabis"></i>',
+                ['EventName'] = 'ls-tables:client:process:table',
+                ['EventParameter'] = 'Crack',
+                ['Enabled'] = function()
+                    return true
+                end,
+                ['EventParameter'] = 0,
+            },
+            [2] = {
+                ['Name'] = 'Tafel Oppakken',
+                ['EventType'] = 'Client',
+                ['Logo'] = '<i class="fas fa-hand-rock"></i>',
+                ['EventName'] = 'ls-tables:client:pickup:table',
+                ['Enabled'] = function()
+                    return true
+                end,
+                ['EventParameter'] = 0,
+            },
+        },
+    },
+
+    [GetHashKey('bkr_prop_meth_table01a')] = {
+        ['Options'] = {
+            [1] = {
+                ['Job'] = false,
+                ['UseDuty'] = false,
+                ['Name'] = 'Opbreken Trays',
+                ['EventType'] = 'Client',
+                ['Logo'] = '<i class="fas fa-pencil-ruler"></i>',
+                ['EventName'] = 'ls-tables:client:process:table',
+                ['EventParameter'] = 'Meth',
+                ['Enabled'] = function()
+                    return true
+                end,
+            },
+            [2] = {
+                ['Name'] = 'Tafel Oppakken',
+                ['EventType'] = 'Client',
+                ['Logo'] = '<i class="fas fa-hand-rock"></i>',
+                ['EventName'] = 'ls-tables:client:pickup:table',
+                ['Enabled'] = function()
+                    return true
+                end,
+                ['EventParameter'] = 0,
+            },
+        },
+    },
+    [GetHashKey('bkr_prop_weed_table_01a')] = {
+        ['Options'] = {
+            [1] = {
+                ['Job'] = false,
+                ['UseDuty'] = false,
+                ['Name'] = 'Wiet',
+                ['EventType'] = 'Client',
+                ['Logo'] = '<i class="fas fa-pencil-ruler"></i>',
+                ['EventName'] = 'ls-tables:client:process:table',
+                ['EventParameter'] = 'Weed',
+                ['Enabled'] = function()
+                    return true
+                end,
+            },
+            [2] = {
+                ['Name'] = 'Tafel Oppakken',
+                ['EventType'] = 'Client',
+                ['Logo'] = '<i class="fas fa-hand-rock"></i>',
+                ['EventName'] = 'ls-tables:client:pickup:table',
+                ['Enabled'] = function()
+                    return true
+                end,
+                ['EventParameter'] = 0,
+            },
+        },
+    },
+
     [GetHashKey('v_ind_meatwash')] = {
         ['Options'] = {
             [1] = {
