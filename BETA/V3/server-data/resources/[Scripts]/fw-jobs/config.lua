@@ -889,13 +889,9 @@ Config.FishingRestaurant = {
 }
 
 Config.FishingItems = {
-    ["rod"] = {
+    ["fishingrod"] = {
         ["name"] = "fishrod",
         ["label"] = "Vishengel"
-    },
-    ["bait"] = {
-        ["name"] = "fishbait",
-        ["label"] = "Vis aas"
     },
     ["fish-1"] = {
         ["price"] = 3 
