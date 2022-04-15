@@ -1,0 +1,152 @@
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+.color-0{color: #ffffff;}
+.color-1{color: #ff4444;}
+.color-2{color: #99cc00;}
+.color-3{color: #ffbb33;}
+.color-4{color: #0099cc;}
+.color-5{color: #33b5e5;}
+.color-6{color: #aa66cc;}
+.color-8{color: #cc0000;}
+.color-9{color: #cc0068;}
+src: url("../BarlowCondensed.ttf");
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.no-grow {
+  flex-grow: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+#app {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: transparent;
+}
+
+.chat-window {
+  position: absolute;
+  left: 15px;
+  width: 32vw;
+  height: 20vh;
+  background-color: rgba(255, 255, 255, 0);
+  top: 5vh;
+  -webkit-animation-duration: 2s;
+}
+
+.chat-messages {
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.chat-input {
+  position: absolute;
+  font-size: 1.1vh;
+  top: 27vh;
+  left: 15px;
+  width: 28vw;
+  box-sizing: border-box;
+}
+
+textarea {
+  font-family: 'Roboto', sans-serif!important;
+  font-size: 1.1vh;
+  display: block;
+  box-sizing: border-box;
+  padding: 0.65vw;
+  color: #ffffff;
+  background-color: #2f3640b6;
+  width: 80%;
+  min-height: 4.3vh;
+  max-height: 4.3vh;
+  border: 1px solid #333b46;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  resize: none;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.msg {
+  margin-bottom: 5px;
+}
+
+.suggestions {
+  list-style-type: none;
+  padding: 5px;
+  padding-left: 27px;
+  font-size: 1.1vh;
+  box-sizing: border-box;
+  color: white;
+  background-color: #2f3640b6;
+  border: 1px solid #333b46;
+  width: 80%;
+}
+
+.help {
+  margin-top: -10px;
+  color: #ffffffe7;
+}
+
+.disabled {
+  margin-top: -10px;
+  color: #ffffff93;
+}
+
+.suggestion {
+  margin-bottom: 5px;
+  color: #ffffffec;
+}
+
+.chat-message {
+  display: inline-block !important;
+  font-size: 1.15vh;
+  padding: 0.75vw;
+  margin: 0.1vw;
+  border-radius: .2vh;
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+  word-break: break-word;
+  background-color: #222831de;
+}
+
+.warning {
+  background-color: #222831de;
+  border-left: .4vh solid #ff8800c5;
+}
+
+.report {
+  background-color: #222831de;
+  border-left: .4vh solid #59a32ed7;
+}
+
+.reportr {
+  background-color: #222831de;
+  border-left: .4vh solid #923792c5;
+}
+
+.normal {
+  background-color: #222831f1;
+  border-left: .4vh solid #2980bbc5;
+}
+
+.error {
+  background-color: #222831de;
+  border-left: .4vh solid #c03a2bd7;
+}

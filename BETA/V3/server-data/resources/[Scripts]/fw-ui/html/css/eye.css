@@ -1,0 +1,42 @@
+
+.main-eye-container {
+    display: none;
+}
+
+.menu-items-container {
+    display: none;
+}
+
+.eye-interact {
+    position: absolute;
+    left: 87vh;
+    top: 48.5vh;
+}
+
+.eye {
+    width: 4vh;
+    height: 4vh;
+}
+
+.menu-items-container {
+    position: absolute;
+    left: 49.6vw;
+    top: 52vh;
+}
+
+.menu-item {
+    color: #FF5722;
+    font-size: 1.5vh;
+    font-weight: 600;
+    margin-bottom: 0.6vh;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.menu-text {
+    color: white;
+    margin-left: 0.2vh;
+}
+
+.hover-item {
+    color: #FF5722; 
+}

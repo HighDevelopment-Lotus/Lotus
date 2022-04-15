@@ -1,0 +1,19 @@
+.main-interaction-container {
+    position: absolute;
+    display: none;
+    left: -10vh;
+    top: 30vh;
+}
+
+.interaction-container {
+    width: fit-content;
+    height: fit-content; 
+    padding: 1vh; 
+    background-color: #496a8f;
+    line-height: 1.5vh;
+    border-radius: 0.3vh;
+    text-align: center;
+    color: #ebebeb;
+    font-weight: 675;
+    font-size: 1.5vh;
+}
