@@ -89,15 +89,11 @@ AddEventHandler('framework-fuel:client:refuel:vehicle', function(data)
     local Vehicle, VehDistance = LSCore.Functions.GetClosestVehicle()
     local Plate = GetVehicleNumberPlateText(Vehicle)
     if Vehicle ~= 0 and VehDistance < 4.5 then
-        if exports['fw-misc']:GetBlackoutStatus() then
-            LSCore.Functions.Notify('Het stroom is uitgevallen.', 'error')
-        else
-            LSCore.Functions.TriggerCallback('LSCore:RemoveCash', function(DidPay)
-                if DidPay then
-                    RefuelCar(Vehicle, Plate)
-                end
-            end, Config.TankLocations[CurrentPump]['Tank-Price']) 
-        end
+        LSCore.Functions.TriggerCallback('LSCore:RemoveCash', function(DidPay)
+            if DidPay then
+                RefuelCar(Vehicle, Plate)
+            end
+        end, Config.TankLocations[CurrentPump]['Tank-Price']) 
     end
 end)
 
