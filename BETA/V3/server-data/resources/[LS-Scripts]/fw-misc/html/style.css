@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    display: none;
+}
+
+#cursor {
+    position: absolute;
+    z-index: 999999;
+    display: none;
+}
+
+.info {
+    background-color:rgba(255, 255, 255, 0.863);
+    color: black;
+    font-size:14px;
+    text-align: center;
+    padding:5px;
+    margin-top:5px;
+    border-radius:10px;
+}
+
+.header {
+    background-size:cover;
+    color: white;
+    text-align: center;
+    height:150px;
+    padding-top:10px;
+    border-radius:10px;
+}
+
+
+.dialog {
+    min-width: 100px;
+    max-width: 300px;
+    width:30%;
+    position: absolute;
+    right: 50%;
+    bottom: 30px;
+    transform: translateX(290%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:10px;
+}
+
+.skill {
+    margin-top:5px;
+    margin-bottom:5px;
+    float:left;
+    margin-left:5px;
+    width: calc(100% - 10px);
+}
+
+#baanProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27); 
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size:14px;
+}
+
+#baanBar {
+    width: 10%;
+    height: 20px;
+    background-color: rgb(201, 183, 26); 
+    text-align: center; 
+    color: white; 
+}
+
+#drugsProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#drugsBar {
+    width: 10%;
+    height: 20px;
+    background-color: #A80000;
+    text-align: center; 
+    color: white; 
+}
+
+#runsProgress {
+    width: 100%;
+    background-color: rgba(146, 145, 145, 0.27);
+}
+
+#runsBar {
+    width: 10%;
+    height: 20px;
+    background-color: #4CAF50;
+    text-align: center; 
+    color: white; 
+}

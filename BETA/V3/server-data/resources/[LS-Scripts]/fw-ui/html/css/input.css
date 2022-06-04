@@ -1,0 +1,99 @@
+.main-input-container {
+    position: absolute;
+    display: none;
+    top: 35vh;
+    left: 42%;
+    animation: fadeInRight;
+    animation-duration: .5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-container {
+    width: 31vh;
+    height: 15vh;
+    background-color: #222831;
+    border: .2vh solid #161a20;
+    box-shadow: 0vh 0vh .6vh rgb(5, 5, 5);
+    border-radius: .4vh;
+}
+
+.input-input {
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.4vh;    
+    color: #ebebeb;
+    font-weight: 550;
+    letter-spacing: .1vh;
+    width: 23.2vh;
+}
+
+.input-input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.input-title {
+    position: absolute;
+    top: 3vh;
+    left: 2.8vh;
+    color: #ebebeb;
+    font-weight: 550;
+    font-size: 1.2vh; 
+    letter-spacing: .2vh;
+}
+
+.input-underline {
+    position: absolute;
+    bottom: 7.5vh;
+    left: 3vh;
+    height: 1vh;
+    width: 25vh;
+    border-bottom: 2px solid #ebebeb;
+}
+
+.input-logo {
+    position: absolute;
+    top: 5vh;
+    left: 3.2vh;
+    color: #ebebeb;
+    font-size: 1.4vh; 
+}
+
+.input-button-accept {
+    position: absolute;
+    bottom: 2.5vh;
+    right: 3vh;
+    width: 11vh;
+    height: 3.5vh;
+    background-color: #498f54;
+    line-height: 3.5vh;
+    text-align: center;
+    border-radius: 7px;
+    color: #ebebeb;
+    font-weight: 550;
+}
+
+.input-button-accept:hover {
+    background-color: #498f53e3;
+}
+
+.input-button-cancel {
+    position: absolute;
+    bottom: 2.5vh;
+    left: 3vh;
+    width: 11vh;
+    height: 3.5vh;
+    background-color: #8f4949;
+    line-height: 3.5vh;
+    text-align: center;
+    border-radius: 7px;
+    color: #ebebeb;
+    font-weight: 550;
+}
+
+.input-button-cancel:hover {
+    background-color: #8f4949e1;
+}

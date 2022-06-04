@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'GTA';
+    src: url('./fonts/GTA.ttf');
+}
+
+.hud-status {
+    display: inline-flexbox;
+    position: absolute;
+    /* display: hidden; */
+    left: 3.5vh;
+    bottom: -9vh;
+}
+
+.hud-circle > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.9vh;
+}
+
+.car-speed-circle {
+    position: absolute;
+    bottom: 5vh;
+    left: 30vh;
+    width: 8vh !important;
+    height: 8vh !important;
+    border-radius: 50%;
+}
+
+.hud-circle {
+    position: relative;
+    width: 5vh !important;
+    height: 5vh !important;
+    border-radius: 50%;
+    background-color: transparent;
+    background: radial-gradient(circle, #222831 0%, rgba(30,30,30,1) 52%, rgba(92,92,92,0) 52%, rgba(255,255,255,0) 100%);
+    margin: 0.3vh;
+    float: left;
+}
+
+/* Car */
+
+.main-car-hud {
+    display: none;
+}
+
+.car-hud-status {
+    display: flex;
+    position: absolute;
+    left: 38.5vh;
+    bottom: 8.7vh;
+}
+
+.car-hud-circle > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.0vh;
+}
+
+.car-hud-circle {
+    position: relative;
+    width: 3vh !important;
+    height: 3vh !important;
+    border-radius: 50%;
+    background-color: transparent;
+    background: radial-gradient(circle, #222831 0%, rgba(30,30,30,1) 52%, rgba(92,92,92,0) 52%, rgba(255,255,255,0) 100%);
+    margin: 0.2vh;
+}
+
+.hud-belt > img {
+    position: absolute;
+    width: 1.7vh;
+    height: 1.7vh;
+    left: .6vh;
+    top: .7vh;
+}
+
+/* Money */
+
+.money-container {
+    position: absolute;
+    top: 12.2vh;
+    right: 2vh;
+}
+
+.current-money {
+    position: absolute;
+    right: 2vh;
+    top: 10vh;
+    font-family: 'GTA';
+    font-weight: 400;
+    font-size: 29px;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+}
+
+.money {
+    margin-left: 1vh;
+    float: right;
+    font-family: 'GTA';
+    font-weight: 400;
+    font-size: 29px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+   
+.plus {
+    color: #277418;
+}
+   
+.minus {
+    color: #801e1f;
+}
+   
+.reset-color {
+    color: white;
+}
+
+.map-border {
+    position: absolute;
+    bottom: 3vh;
+    left: 2.5vh;
+    width: 24.5vh;
+    height: 15.5vh;
+    border-radius: 7px;
+    box-shadow: 1px 1px 6px rgb(5, 5, 5);
+    border: 5px solid rgba(255,255,255,0.75); 
+}
+
+.speed {
+    position: absolute;
+    top: .6vh;
+    left: 2.55vh;
+    width: 3vh;
+    height: 3vh;
+    color: white;
+    font-size: 1.2vh;
+    text-align: center;
+    line-height: 3vh;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.meters {
+    position: absolute;
+    top: 3vh;
+    left: 3vh;
+    color: white;
+    font-size: 0.8vh;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.shadow {
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 1));
+}

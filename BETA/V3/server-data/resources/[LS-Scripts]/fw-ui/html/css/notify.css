@@ -1,0 +1,48 @@
+.main-notify-container {
+    position: absolute;
+    top: 20vh;
+    right: 2vh;
+    width: 55vh;
+    height: 15vh;
+}
+
+.main-notifycar-container {
+    position: absolute;
+    bottom: 13.7vh;
+    left: 30vh;
+    width: 40vh;
+    height: 5vh;
+}
+
+.notify {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.2vh;
+    font-weight: 600;
+    color: white;
+    padding: 1vh;
+    float: right;
+    border-radius: .4vh;
+    margin-bottom: .5vh;
+    margin-right: .5vh;
+    letter-spacing: .1vh;
+}
+
+.green {
+    background-color: rgb(45, 185, 98);
+}
+
+.red {
+    background-color: rgb(204, 51, 51);
+}
+
+.orange {
+    background-color: rgb(209, 87, 5);
+}
+
+.blue {
+    /* background-color: rgb(51, 143, 204); */
+  background-color: #222831de;
+  border-left: .4vh solid #FF715B;
+}

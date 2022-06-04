@@ -1,0 +1,48 @@
+body {
+    background-color: transparent !important;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.notif-container {
+    position: absolute;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    left: 40%;
+    top: 1.2vh;
+    width: 25vw;
+}
+
+.notification {
+    padding: 1.2vh;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1.4vh;
+    animation: bounceIn;
+    animation-duration: 2s;
+    margin-bottom: 1vh;
+}
+
+.notification span {
+    margin: 0;
+    padding: 0;
+}
+
+.notification-icon {
+    font-size: 1.5vh;
+    margin-right: 1.5vh;
+    float: left;
+    margin-top: 0.2vh;
+}
+
+.admin {
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0.3) 55%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0.3) 55%);
+    background: linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0.3) 55%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+
+    border: 2px solid rgb(126, 126, 126);    
+    color: #fff;
+}

@@ -1,0 +1,442 @@
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+.color-0{color: #ffffff;}
+.color-1{color: #ff4444;}
+.color-2{color: #99cc00;}
+.color-3{color: #ffbb33;}
+.color-4{color: #0099cc;}
+.color-5{color: #33b5e5;}
+.color-6{color: #aa66cc;}
+.color-8{color: #cc0000;}
+.color-9{color: #cc0068;}
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.no-grow {
+  flex-grow: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+#app {
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: transparent;
+  height: 35vh;
+}
+
+.chat-window {
+  position: absolute;
+  left: 15px;
+  width: 32vw;
+  height: 35vh;
+  background-color: rgba(255, 255, 255, 0);
+  top: 5vh;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  margin-top: 11vh;
+}
+
+.chat-messages {
+  max-height: 100%;
+  font-size: 14px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+
+.chat-input {
+  font-size: 0.9rem;
+  position: absolute;
+  top: 42vh;
+  left: 15px;
+  width: 28vw;
+  box-sizing: border-box;
+  margin-top: 9vh;
+}
+
+textarea {
+  font-family: sans-serif!important;
+  font-size: 1.4vh;
+  display: block;
+  box-sizing: border-box;
+  padding: 0.3vw;
+  text-indent: .5vh;
+  color: #ffffff;
+  background-color: #2f3640b6;
+  width: 94.5%;
+  min-height: 3vh;
+  max-height: 3vh;
+  border: 1px solid #333b46;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  resize: none;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.msg {
+  margin-bottom: 5px;
+}
+
+.suggestions {
+  list-style-type: none;
+  padding: 5px;
+  padding-left: 27px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  color: white;
+  background-color: #2f3640b6;
+  border: 1px solid #333b46;
+  width: 94.5%;
+}
+
+.help {
+  margin-top: -10px;
+  color: #ffffffe7;
+}
+
+.disabled {
+  margin-top: -10px;
+  color: #ffffff93;
+}
+
+.suggestion {
+  margin-bottom: 5px;
+  color: #ffffffec;
+}
+
+.chat-message {
+  display: inline-block !important;
+  padding: 0.65vw;
+  margin: 0.2vw;
+  border-radius: .8vh;
+  background-color: rgba(47, 114, 181, 0.9);
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.chat-message.advert {
+  background-color: rgba(47, 92, 115, 0.8);
+}
+
+.warning {
+  background-color: #222831de;
+  border-left: .4vh solid #ff8800c5;
+}
+
+.report {
+  background-color: #222831de;
+  border-left: .4vh solid #59a32ed7;
+}
+
+.reportr {
+  background-color: #222831de;
+  border-left: .4vh solid #923792c5;
+}
+
+.normal {
+  background-color: #222831f1;
+  border-left: .4vh solid #2980bbc5;
+}
+
+.error {
+  background-color: #222831de;
+  border-left: .4vh solid #c03a2bd7;
+}
+.ac {
+  background-color: rgba(35, 0, 49, 0.9);
+}
+.staff {
+  background-color: rgba(30, 30, 30, 0.9);
+}
+.support {
+  background-color: rgba(0, 45, 145, 0.68);
+}
+
+.chat-message.system {
+  background-color: rgb(67, 57, 111);
+}
+
+.chat-message.emergency {
+  background-color: rgba(201, 45, 45, 0.8);
+}
+
+.chat-message.nonemergency {
+  background-color: rgba(112, 25, 25, 0.8);
+}
+
+.chat-message.report {
+  background-color: rgba(75, 150, 9, 0.8);
+}
+
+
+/*ID KAART*/
+
+@font-face {
+  font-family: justsignature;
+  src: url('../assets/justsignature/JustSignature.woff');
+}
+
+#lawyer-card {
+  position: relative;
+  /*display: none;*/
+  /*margin: 0 50px 0 0;*/
+  float: right;
+  width: 457px;
+  height: 272px;
+  padding: 54px 17px 10px 144px;
+  background: url("../images/lawyerpass.png");
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+}
+
+#id-card {
+  position: relative;
+  /*display: none;*/
+  /*margin: 0 50px 0 0;*/
+  float: right;
+  width: 457px;
+  height: 272px;
+  padding: 54px 17px 10px 144px;
+  background: url("../images/idcard.png");
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+}
+#license-card {
+  position: relative;
+  /*display: none;*/
+  /*margin: 230px 50px 0 0;*/
+  float: right;
+  width: 457px;
+  height: 272px;
+  padding: 54px 17px 10px 144px;
+  background: url("../images/license.png");
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+}
+#id-card img {
+  position: absolute;
+  left: 17px;
+  top: 48px;
+  max-width: 11vh;
+  min-height: 15vh;
+  border-radius: 6px;
+  opacity: 0.9;
+  object-fit: cover;
+}
+#lawyer-card img {
+  position: absolute;
+  left: 325px;
+  top: 55px;
+  max-width: 11vh;
+  min-height: 15vh;
+  border-radius: 6px;
+  opacity: 0.9;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1921px){
+  #id-card img {
+    position: absolute;
+    left: 17px;
+    top: 48px;
+    max-width: 8.6vh;
+    min-height: 11.7vh;
+    border-radius: 6px;
+    opacity: 0.9;
+  }
+  #lawyer-card img {
+    position: absolute;
+    left: 17px;
+    top: 48px;
+    max-width: 8.6vh;
+    min-height: 11.7vh;
+    border-radius: 6px;
+    opacity: 0.9;
+  }
+  #signature {
+    bottom: 5vh !important;
+  }
+}
+
+#license-card img {
+  position: absolute;
+  left: 30px;
+  top: 76px;
+  width: 100px;
+  height: 129px;
+  border-radius: 6px;
+  opacity: 0.9;
+  object-fit: cover;
+}
+
+#lawyer-id {
+  font-weight: bolder;
+  font-size: 12px;
+  color: #282828;
+  padding-left: 50px;
+  margin-top: 47px;
+}
+#lawyer-name {
+  font-weight: bolder;
+  font-size: 12px;
+  color: #282828;
+  padding-left: 45px;
+  margin-top: 16px;
+}
+#name {
+  font-weight: bolder;
+  font-size: 12px;
+  color: #282828;
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+#lawyer-bsn {
+  font-weight: bolder;
+  font-size: 12px;
+  color: #282828;
+  margin-top: 16px;
+  padding-left: 18px;
+}
+#bsn {
+  font-weight: bolder;
+  font-size: 12px;
+  color: #282828;
+  margin-top: -4px;
+  padding-left: 18px;
+}
+#lawyer-lastname {
+  font-weight: bolder;
+  font-size: 12px;
+  color: #282828;
+  padding-top: 17px;
+  padding-left: 60px;
+}
+#lastname {
+  font-weight: bolder;
+  font-size: 12px;
+  color: #282828;
+  padding-top: 20px;
+  padding-left: 18px;
+}
+#inline {
+  position: absolute;
+  top: 121px;
+}
+#dob {
+  font-weight: bolder;
+  position: absolute;
+  padding-left: 18px;
+  padding-top: 34px;
+  width: 100px;
+  color: #282828;
+  font-size: 12px;
+}
+#sex {
+  font-weight: bolder;
+  position: absolute;
+  padding-left: 18px;
+  padding-top: 10px;
+  color: #282828;
+  font-size: 12px;
+}
+#nationality {
+  font-weight: bolder;
+  position: absolute;
+  padding-left: 68px;
+  padding-top: 10px;
+  color: #282828;
+  font-size: 12px;
+}
+
+#lawyer-signature {
+  font-weight: bolder;
+  position: absolute;
+  bottom: 6vh;
+  left: 20px;
+  color: #282828;
+  font-size: 19px;
+  text-transform:capitalize;
+  font-family: justsignature;
+}
+#signature {
+  font-weight: bolder;
+  position: absolute;
+  bottom: 6vh;
+  left: 10px;
+  color: #282828;
+  font-size: 19px;
+  text-transform:capitalize;
+  font-family: justsignature;
+}
+#licenses {
+  font-weight: bolder;
+  position: absolute;
+  color: #282828;
+  top: 179px;
+  left: 270px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size:12px;
+}
+#name2 {
+  font-weight: bolder;
+  font-size: 12px;
+  color: #282828;
+  padding-left: 18px;
+  padding-top:13px;
+}
+#lastname2 {
+  font-weight: bolder;
+  font-size: 12px;
+  color: #282828;
+  padding-top: 29px;
+  padding-left: 18px;
+}
+
+#dob2 {
+  font-size: 11px;
+  font-weight: bolder;
+  position: absolute;
+  padding-left: 18px;
+  margin-top: 0px;
+  width: 100px;
+  color: #282828;
+
+}
+#sex2 {
+  font-size: 12px;
+  font-weight: bolder;
+  position: absolute;
+  padding-left: 18px;
+  padding-top: 22px;
+  color: #282828;
+}
+#signature2 {
+  font-weight: bolder;
+  position: absolute;
+  bottom: 128px;
+  /*left: 10px;*/
+
+  color: #282828;
+  font-size: 10px;
+  text-transform:capitalize;
+  font-family: justsignature;
+}

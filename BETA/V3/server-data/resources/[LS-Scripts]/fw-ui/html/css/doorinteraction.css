@@ -1,0 +1,28 @@
+.main-doorinteraction-container {
+    position: absolute;
+    display: none;
+    top: -10vh;
+    /* top: 30vh; */
+    left: 50%;
+}
+
+.doorinteraction-container {
+    width: fit-content;
+    height: fit-content; 
+    padding: 1vh; 
+    background-color: #496a8f;
+    line-height: 1.5vh;
+    border-radius: 0.3vh;
+    transform: translate(0%, 0%);
+    transform: rotate(-0.1turn);
+    text-align: center;
+    color: #ebebeb;
+    font-weight: 675;
+    font-size: 1.5vh;
+    opacity: 0.9;
+}
+.doorinteraction-container > img {
+    /* opacity: 0.7; */
+    transform: translate(0%, 0%);
+    transform: rotate(+0.1turn);
+}

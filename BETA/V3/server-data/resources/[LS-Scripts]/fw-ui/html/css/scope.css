@@ -1,0 +1,21 @@
+.main-sniper-scope {
+    display: none;
+}
+
+.FadeIn {
+    animation: fadeIn;
+    animation-duration: 0.25s;
+}
+
+.FadeOut {
+    animation: fadeOut;
+    animation-duration: 0.25s;
+}
+
+.scope-hunting {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

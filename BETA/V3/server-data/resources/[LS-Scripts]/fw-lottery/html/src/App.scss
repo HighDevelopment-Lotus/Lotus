@@ -1,0 +1,46 @@
+.App {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  // width: 1200px;
+  // height: 750px;
+
+  width: 80vh; // 1.6*height
+  height: 50vh;
+
+  text-align: center;
+  // zoom: 70%;
+  margin: 0 auto;
+}
+
+.ScratchCard {
+  position: relative;
+
+  // width: 1200px;
+  // height: 750px;
+
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.SerialNumber {
+  position: absolute;
+
+  // width: 368px;
+  // height: 59px;
+  // bottom: 44px;
+  // left: 42px;
+
+  width: 24.5vh;
+  height: 4vh;
+  left: 2.8vh;
+  bottom: 3.25vh;
+
+  font-family: 'impactreg';
+  font-size: 1.5em;
+  line-height: 59px;
+}
