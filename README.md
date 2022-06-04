@@ -1,4 +1,4 @@
- # Lotus (PEPE Based)
+ # Lotus
  
 
 ## Installation
