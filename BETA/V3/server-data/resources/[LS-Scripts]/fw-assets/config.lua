@@ -135,7 +135,7 @@ Config.Blips = {
 }
 
 Config.DiscordSettings = {
-['AppId'] = ,
+['AppId'] = '',
 ['Text'] = 'Lotus Roleplay',
 }
 
