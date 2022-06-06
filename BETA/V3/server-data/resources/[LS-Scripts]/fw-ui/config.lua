@@ -995,7 +995,7 @@ Config.ObjectOptions = {
                 ['Name'] = 'Opslag',
                 ['EventType'] = 'Client',
                 ['Logo'] = '<i class="fas fa-box"></i>',
-                ['EventName'] = 'framework-autocare:client:open:storage',
+                ['EventName'] = 'framework-autocare:client:open:storage', 
                 ['Enabled'] = function()
                     return true
                 end,

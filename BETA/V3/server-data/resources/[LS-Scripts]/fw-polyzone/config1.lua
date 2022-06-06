@@ -1272,13 +1272,13 @@ Config.BoxZones = {
             },
             {
                 type = "client", 
-                event = "framework-mechanic:client:open:storage",
+                event = "framework-autocare:client:open:storage",
                 icon = "fas fa-box",
                 label = "Storage",
                 job = "mechanic",
                 action = function()
                     if IsPedAPlayer() then return false end
-                    TriggerEvent('framework-mechanic:client:open:storage', 'repairshop')
+                    TriggerEvent('framework-autocare:client:open:storage', 'repairshop')
                 end,
             },
         },
@@ -1303,13 +1303,13 @@ Config.BoxZones = {
             },
             {
                 type = "client", 
-                event = "framework-mechanic:client:open:storage",
+                event = "framework-autocare:client:open:storage",
                 icon = "fas fa-box",
                 label = "Storage",
                 job = "mechanic",
                 action = function()
                     if IsPedAPlayer() then return false end
-                    TriggerEvent('framework-mechanic:client:open:storage', 'repairshop')
+                    TriggerEvent('framework-autocare:client:open:storage', 'repairshop')
                 end,
             },
         },
@@ -1334,13 +1334,13 @@ Config.BoxZones = {
             },
             {
                 type = "client", 
-                event = "framework-mechanic:client:open:storage",
+                event = "framework-autocare:client:open:storage",
                 icon = "fas fa-box",
                 label = "Storage",
                 job = "mechanic",
                 action = function()
                     if IsPedAPlayer() then return false end
-                    TriggerEvent('framework-mechanic:client:open:storage', 'repairshop')
+                    TriggerEvent('framework-autocare:client:open:storage', 'repairshop')
                 end,
             },
         },
@@ -1365,13 +1365,13 @@ Config.BoxZones = {
             },
             {
                 type = "client", 
-                event = "framework-mechanic:client:open:storage",
+                event = "framework-autocare:client:open:storage",
                 icon = "fas fa-box",
                 label = "Storage",
                 job = "mechanic",
                 action = function()
                     if IsPedAPlayer() then return false end
-                    TriggerEvent('framework-mechanic:client:open:storage', 'mechanic')
+                    TriggerEvent('framework-autocare:client:open:storage', 'mechanic')
                 end,
             },
         },
@@ -1409,7 +1409,7 @@ Config.BoxZones = {
         options = {
             {
                 type = "client", 
-                event = "framework-mechanic:client:open:register",
+                event = "framework-autocare:client:open:register",
                 icon = "fas fa-cash-register",
                 label = "Use Register",
                 job = "burger",
@@ -1421,7 +1421,7 @@ Config.BoxZones = {
             },
             {
                 type = "client", 
-                event = "framework-mechanic:client:open:payment",
+                event = "framework-autocare:client:open:payment",
                 icon = "fas fa-receipt",
                 label = "Betaal",
                 canInteract = function()
