@@ -35,8 +35,8 @@ Citizen.CreateThread(function()
                         ShowingInteraction = true
                         exports['fw-ui']:ShowInteraction('[E] Koper Stelen', 'primary')
                     end
-
-                    if IsControlJustPressed(0, Config.Keys['E']) then
+                    if IsControlJustReleased(0, 38) then
+                    ---if IsControlJustPressed(0, Config.Keys['E']) then
                         if not Config.Places['palen'][k]['IsBezig'] then
                             if not Config.Places['palen'][k]['Geknipt'] then
                                 local chance = math.random(1, 6)
