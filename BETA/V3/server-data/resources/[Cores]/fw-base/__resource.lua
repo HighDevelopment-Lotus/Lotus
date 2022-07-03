@@ -9,7 +9,6 @@ server_scripts {
  "config.lua",
  "server/server.lua",
  "server/functions.lua",
- "server/metadata.lua",
  "server/player.lua",
  "server/events.lua",
  "server/commands.lua",
