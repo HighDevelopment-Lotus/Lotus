@@ -27,3 +27,6 @@
 3. Command out (fivem-appearance, ls-context, ls-keyboard)
 4. Go to ls-appartments (Line 81 and enable this line and command Line 82 out) Also to this on Line 131 enable this line and command out line 132)
 5. Now you can use the old Lotus Clothing Menu
+
+
+Lotus was originally created by NietBakker these versions are updated by HighDevelopment.
